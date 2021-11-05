@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export default function Avions() {
-    return (
-        <div>
-
-        </div>
-    )
+  return (
+    <div>
+      <h1>avions</h1>
+    </div>
+  );
 }
