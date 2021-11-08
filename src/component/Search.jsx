@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
-// import image from '../images/vid.mp4'
-import img from '../images/airplan.jpg'
+import '../css/input.css'
+import image from '../images/video.mp4'
+// import img from '../images/airplan.jpg'
 // import { Form, Button, Col, Row } from 'react-bootstrap';
 
 
@@ -19,54 +20,57 @@ export default function Search() {
         if (aller && to) {
             console.log('success !', aller, to, date, time, dateretour, timeretour);
         } else {
-            console.error('saisir De ... et A ...');
+            console.error('saisir From ... et To ...');
         }
     }
 
     return (
-        <>
-            <div className="container col-12 bg-warning rounded" style={{ backgroundImage: `url(${img})`, backgroundSize: "cover", height: "100vh" }} >
-                <form className="p-3 col-6" >
-                    <div className="mb-2">
+        <div className="body col-12">
+            <video loop muted autoPlay>
+                <source src={image} />
+            </video>
+            <div className="container row col-6 justify-content-start ms-5 rounded mt-4 p-3">
+                <form className="p-3 col-10" >
+                    <div className="">
                         <div className="form-check">
                             <input className="form-check-input" type="checkbox" id="check1" />
-                            <label htmlFor="check1">ALLER SIMPLE</label>
+                            <label htmlFor="check1"><p>SIMPLE GO</p></label>
                         </div>
                     </div>
-                    <div className="mb-2">
+                    <div>
                         <div className="form-check">
-                            <input className="form-check-input" type="checkbox" id="check1" />
-                            <label htmlFor="check1">ALLER-RETOUR</label>
+                            <input className="form-check-input" type="checkbox" id="check2" />
+                            <label htmlFor="check2"><p>GO-RETURN</p></label>
                         </div>
                     </div>
 
                     <div className="mb-3">
-                        <input type="text" onChange={(e) => setAller(e.target.value)} id="disabledTextInput" className="form-control" placeholder="DE ..." />
+                        <input type="text" onChange={(e) => setAller(e.target.value)} className="form-control" placeholder="From ..." />
                     </div>
                     <div className="mb-3">
-                        <input type="text" onChange={(e) => setTo(e.target.value)} id="disabledTextInput" className="form-control" placeholder="A ..." />
+                        <input type="text" onChange={(e) => setTo(e.target.value)} className="form-control" placeholder="To..." />
                     </div>
                     <div className="mb-3">
-                        <input type="date" onChange={(e) => setDate(e.target.value)} id="disabledTextInput" className="form-control" placeholder="" />
+                        <input type="date" onChange={(e) => setDate(e.target.value)} className="form-control" placeholder="" />
                     </div>
                     <div className="mb-3">
-                        <input type="time" onChange={(e) => setTime(e.target.value)} id="disabledTextInput" className="form-control" placeholder="" />
+                        <input type="time" onChange={(e) => setTime(e.target.value)} className="form-control" placeholder="" />
                     </div>
 
                     <div>
-                        <p>Retour :</p>
+                        <p>Return :</p>
                     </div>
                     <div className="mb-3">
-                        <input type="date" onChange={(e) => setDateretour(e.target.value)} id="disabledTextInput" className="form-control" placeholder="" />
+                        <input type="date" onChange={(e) => setDateretour(e.target.value)} className="form-control" />
                     </div>
                     <div className="mb-3">
-                        <input type="time" onChange={(e) => setTimeretour(e.target.value)} id="disabledTextInput" className="form-control" placeholder="" />
+                        <input type="time" onChange={(e) => setTimeretour(e.target.value)} className="form-control" />
                     </div>
 
-                    <button type="submit" onClick={handleSubmit} className="btn btn-primary">Submit</button>
+                    <button type="submit" onClick={handleSubmit} className="btn">Submit</button>
                 </form>
             </div>
-        </>
+        </div>
     )
 }
 
