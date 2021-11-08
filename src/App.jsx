@@ -9,14 +9,6 @@ import Login from "./pages/Login";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export default function App() {
-  const AppContainer = styled.div`
-  width : 100%;
-  height : 100%;
-  display : flex;
-  align-items:center;
-  justify-content : center;
-  background-color : grey;
-  `;
 
   return (
     <div>
