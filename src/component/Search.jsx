@@ -34,7 +34,7 @@ export default function Search() {
 
     return (
         <div className="body col-12">
-            <video loop muted autoPlay>
+            <video className="vid" loop muted autoPlay>
                 <source src={image} />
             </video>
             <div className="container row col-6 justify-content-start ms-5 rounded mt-4 p-3">
