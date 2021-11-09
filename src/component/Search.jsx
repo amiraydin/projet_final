@@ -7,7 +7,11 @@ import image from '../images/video.mp4'
 
 
 export default function Search() {
+    const [simpleGo, setSimpleGo] = useState("")
+    const [goAndReturn, setGoAndReturn] = useState("")
+    const [passengers, setpassengers] = useState("")
     const [aller, setAller] = useState("")
+    const [retour, setRetour] = useState(true)
     const [to, setTo] = useState("")
     const [date, setDate] = useState("")
     const [time, setTime] = useState("")
@@ -18,10 +22,14 @@ export default function Search() {
         e.preventDefault();
 
         if (aller && to) {
-            console.log('success !', aller, to, date, time, dateretour, timeretour);
+            console.log('success !', aller, to, date, time, dateretour, timeretour, simpleGo, goAndReturn, passengers);
         } else {
             console.error('saisir From ... et To ...');
         }
+    }
+
+    function Affiche() {
+        setRetour(!retour)
     }
 
     return (
@@ -30,16 +38,17 @@ export default function Search() {
                 <source src={image} />
             </video>
             <div className="container row col-6 justify-content-start ms-5 rounded mt-4 p-3">
-                <form className="p-3 col-10" >
-                    <div className="">
+
+                <form className="p-3 col-10">
+                    <div>
                         <div className="form-check">
-                            <input className="form-check-input" type="checkbox" id="check1" />
+                            <input onChange={(e) => setSimpleGo(e.target.value)} className="form-check-input" value="SIMPLE GO" type="checkbox" id="check1" />
                             <label htmlFor="check1"><p>SIMPLE GO</p></label>
                         </div>
                     </div>
                     <div>
                         <div className="form-check">
-                            <input className="form-check-input" type="checkbox" id="check2" />
+                            <input type="checkbox" onChange={(e) => setGoAndReturn(e.target.value)} className="form-check-input" value="GO AND RETURN" id="check2" onClick={() => Affiche()} />
                             <label htmlFor="check2"><p>GO-RETURN</p></label>
                         </div>
                     </div>
@@ -51,24 +60,31 @@ export default function Search() {
                         <input type="text" onChange={(e) => setTo(e.target.value)} className="form-control" placeholder="To..." />
                     </div>
                     <div className="mb-3">
-                        <input type="date" onChange={(e) => setDate(e.target.value)} className="form-control" placeholder="" />
+                        <input type="date" onChange={(e) => setDate(e.target.value)} className="form-control" />
                     </div>
                     <div className="mb-3">
-                        <input type="time" onChange={(e) => setTime(e.target.value)} className="form-control" placeholder="" />
-                    </div>
-
-                    <div>
-                        <p>Return :</p>
+                        <input type="time" onChange={(e) => setTime(e.target.value)} className="form-control" />
                     </div>
                     <div className="mb-3">
-                        <input type="date" onChange={(e) => setDateretour(e.target.value)} className="form-control" />
+                        <input type="number" onChange={(e) => setpassengers(e.target.value)} className="form-control" placeholder="passengers" />
                     </div>
-                    <div className="mb-3">
-                        <input type="time" onChange={(e) => setTimeretour(e.target.value)} className="form-control" />
-                    </div>
+                    {!retour &&
+                        <>
+                            <div>
+                                <p>Return :</p>
+                            </div>
+                            <div className="mb-3">
+                                <input type="date" onChange={(e) => setDateretour(e.target.value)} className="form-control" />
+                            </div>
+                            <div className="mb-3">
+                                <input type="time" onChange={(e) => setTimeretour(e.target.value)} className="form-control" />
+                            </div>
+                        </>
+                    }
 
                     <button type="submit" onClick={handleSubmit} className="btn">Submit</button>
                 </form>
+
             </div>
         </div>
     )
