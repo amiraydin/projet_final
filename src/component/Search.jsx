@@ -5,7 +5,6 @@ import image from '../images/video.mp4'
 // import img from '../images/airplan.jpg'
 // import { Form, Button, Col, Row } from 'react-bootstrap';
 
-
 export default function Search() {
     const [simpleGo, setSimpleGo] = useState("")
     const [goAndReturn, setGoAndReturn] = useState("")
@@ -71,7 +70,7 @@ export default function Search() {
                     {!retour &&
                         <>
                             <div>
-                                <p>Return :</p>
+                                <p className="p-search">Return :</p>
                             </div>
                             <div className="mb-3">
                                 <input type="date" onChange={(e) => setDateretour(e.target.value)} className="form-control" />

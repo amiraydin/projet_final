@@ -28,13 +28,13 @@ export default class Navbar extends Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/Register">
-                  Register
+                <Link className="nav-link" to="/Destination">
+                  Destination
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/Reserch">
-                  Reserch
+                  Research
                 </Link>
               </li>
               <li className="nav-item">
