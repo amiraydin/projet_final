@@ -7,7 +7,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-video {
+.vid {
     position: fixed;
     top: 55%;
     left: 40%;
@@ -28,6 +28,7 @@ form {
   backdrop-filter: blur(10px);
   box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
   text-align: center;
+  margin-top: 5rem;
 }
 
 input[type="text"], [type="time"], [type="date"], [type="checkbox"], [type="submit"] {
