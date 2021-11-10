@@ -32,14 +32,13 @@ export default function Search() {
     }
 
     return (
-        <div className="body col-12">
+        <div className="body col-11">
             <video className="vid" loop muted autoPlay>
                 <source src={image} />
             </video>
             <div className="container row col-6 justify-content-start ms-5 rounded mt-4 p-3">
-
-                <form className="p-3 col-10">
-                    <div>
+                <form className="p-4 col-10" >
+                    <div className="">
                         <div className="form-check">
                             <input onChange={(e) => setSimpleGo(e.target.value)} className="form-check-input" value="SIMPLE GO" type="checkbox" id="check1" />
                             <label htmlFor="check1"><p>SIMPLE GO</p></label>

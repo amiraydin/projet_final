@@ -1,0 +1,132 @@
+/* le premier block */
+
+.img-plane{
+  width: 100%;
+}
+
+/* fin premier block */
+
+
+/* La 2em partie carousel */
+/* home est dans carousel et reservation de vol  */
+.home-title{
+    text-align: center;
+    margin: 55px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,sans-serif;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.d-block {
+
+  width: 50%;
+  margin-left: 25%;
+  background-size: cover;
+  filter: drop-shadow(0 0 0.75rem rgb(46, 45, 45));
+}
+
+.paris{
+
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+}
+.rome{
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+/* fin de la partie carousel */
+
+
+
+/* 3 em block reservation de vol */
+/* image side */
+.booking-flight{
+  filter: drop-shadow(0 0 0.75rem rgb(46, 45, 45));
+  width: 25%;
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+}
+
+
+/* le button de reservation */
+.btn-booking {
+  align-items: center;
+  appearance: none;
+  background-color: rgb(156, 154, 154);
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgb(25, 0, 255) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48pbx;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 15px;
+margin-left: 45%;
+}
+
+.btn-booking:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+
+
+
+.text-descri h2  {
+  color: black;
+  line-height: 35px;
+  
+}
+
+.text-descri p  {
+  color: black;
+}
+
+.all-block{
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.text-descri{
+  text-align: center;
+  padding: 7rem;
+}
+
+
+/* fin 3em block re */
+
+
+/* 4 em block Nos avions  */
+
+.flight-one{
+  width: 45%;
+  margin-right:45%;
+}
+
+.flight-two{
+  width: 45%;
+  margin-bottom: 30rem;
+  margin-left:45%;
+}
+
+.img-cont{
+  margin-left: 6rem;
+}
+
+.first-flex{
+  display: flex;
+  justify-content: center;
+}
