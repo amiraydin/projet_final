@@ -1,10 +1,9 @@
 
-import React, { useState } from "react";
+import React from "react";
 import airplan from '../images/airplan.jpg'
 
-export default function CardPlane(props) {
-    const [plane, setPlane] = useState(false)
-    const { country } = props
+export default function CardPlane() {
+
 
 
 
