@@ -1,11 +1,9 @@
-import React, { useState } from "react";
-import { Navbar } from "react-bootstrap";
-
+import React from "react";
 import CardPlane from "../component/Card.avion";
 import '../css/avion.css'
 
 export default function Avions() {
-  const [dataCountries, setDataCountries] = useState([])
+  
 
 
 

@@ -5,12 +5,13 @@ import Carousel from 'react-bootstrap/Carousel'
 import imageOne from '../images/destination_photo/paris.jpg'
 import imageTwo from '../images/destination_photo/ny.jpg'
 import imageThird from '../images/destination_photo/rome.jpg'
-import video from '../images/video.mp4'
 import { Link } from "react-router-dom";
 import homeimg from '../images/destination_photo/planeh.jpg'
 import Typical from 'react-typical'
 import flight from '../images/aire.jpg'
-import flight2 from '../images/airplan.jpg'
+import flight2 from '../images/confort.jpg'
+import lastLogo from '../images/logoFirst.png'
+import logo from '../images/logo1.png'
 import '../css/home.css'
 
 export default function HomeMain() {
@@ -26,6 +27,7 @@ export default function HomeMain() {
                     ]} />
                 </h1>
             </div>
+
 
             {/* 2em Carousel les photos des destinations */}
             <div className="home-class">
@@ -109,6 +111,7 @@ export default function HomeMain() {
 
 
 
+
             {/* 4 em block Nos avions  */}
 
             <div className="home-class">
@@ -116,22 +119,70 @@ export default function HomeMain() {
                 <div className="line-title"></div>
             </div>
 
-            <div className="first-flex">
-                <div className="img-cont">
-                    <h3>Confort</h3>
-                    <p style={{ color: "black" }}  >Nous fournissons des affrètements d’avions aux professionnels, afin de maximiser leur efficacité en temp
-                        <Link className="nav-link" to="/Avions">
-                        </Link>
-                    </p>
+            <div className="img-cont">
+                <div className="first-block">
+                    <h3><strong>Securite</strong></h3>
+                    <p className="text-first" style={{ color: "black" }} >Tous les avions sont entretenus pour respecter et dépasser les normes de sécurité européennes fixées par l’Agence Européenne de la Sécurité Aérienne (EASA).</p>
+                    <Link className="link" to="/Avions">
+                        En savoir +
+                    </Link>
+
                 </div>
 
-                <div className="second-flex">
-                <img className="flight-one" src={flight} alt="Photo d'un avion" />
-                <h3>Securite</h3>
-                <p style={{ color: "black" }}  >Nous fournissons des affrètements d’avions aux professionnels, afin de maximiser leur efficacité en temp</p>
-                <img className="flight-two
-            " src={flight2} alt="Photo d'un avion" />
+                <div className="second-block">
+                    <img className="flight-one" src={flight} alt=" tof d'un avion" />
+                    <div className="text-snd">
+                        <h3><strong>Confort</strong></h3>
+                        <p style={{ position: "relative", top: "12rem" }} className="text-second" style={{ color: "black" }}  > Voler devrait être un plaisir et nous rendrons votre expérience de vol aussi luxueuse et confortable que possibles</p>
+                        <Link className="link" to="/Avions">
+                            En savoir +
+                        </Link>
+                    </div>
+                    <img className="flight-two" src={flight2} alt="tof d'un avion" />
+                </div>
             </div>
+
+            {/* fin 4em block Nos avions */}
+
+
+
+            {/* dernier block de footer  */}
+            <div class="footer-dark">
+                <footer>
+                    <div class="container">
+                        <img src={logo} className="logo" alt="" srcset="" />
+                        <div class="row">
+                            <div class="col-sm-6 col-md-3 item">
+
+                                <h3>Services</h3>
+                                <ul>
+                                    <li><a href="#">Web design</a></li>
+                                    <li><a href="#">Development</a></li>
+                                    <li><a href="#">Hosting</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6 col-md-3 item">
+                                <h3>About</h3>
+                                <ul>
+                                    <li> <Link className="#" to="/Avions">
+                                        Avions
+                                    </Link></li>
+                                    <li><Link className="#" to="/Register">
+                                        Destination
+                                    </Link></li>
+                                    <li><Link className="#" to="/Reserch">
+                                        Réserver un vol
+                                    </Link></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 item text">
+                                <h3>Company Name</h3>
+                                <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                            </div>
+                            <div><p class="copyright">Company Name © 2018</p></div>
+                        </div>
+                    </div>
+                </footer>
             </div>
 
 
