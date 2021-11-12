@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 import React, { useEffect, useState } from "react";
 
+=======
+import React from "react";
+>>>>>>> 1a512b66b05cb84745d71d68e518f0a2bca81a38
 import CardPlane from "../component/Card.avion";
 
 
 export default function Avions() {
+<<<<<<< HEAD
   const [images, setImages] = useState([])
 
   useEffect(() => {
@@ -11,6 +16,9 @@ export default function Avions() {
       .then(res => res.json())
       .then(json => setImages(json))
   }, [])
+=======
+  
+>>>>>>> 1a512b66b05cb84745d71d68e518f0a2bca81a38
 
 
 
