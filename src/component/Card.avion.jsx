@@ -3,15 +3,7 @@ import React from "react";
 import airplan from '../images/airplan.jpg'
 
 export default function CardPlane() {
-
-
-
-
     return (
-
-
-      
-
         < div className='card-avion' >
             <div className="container-img">
                 <img className='img-avion' src={airplan} alt='jet' />
@@ -22,7 +14,7 @@ export default function CardPlane() {
                 <li><span>model: </span> Citation</li>
                 <li><span>Nb de passagers: </span>5 </li>
                 <li><span>vitesse max: </span> 800km/h</li>
-            </div>          
+            </div>
         </div >
 
 

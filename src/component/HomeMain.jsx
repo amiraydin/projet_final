@@ -10,7 +10,6 @@ import homeimg from '../images/destination_photo/planeh.jpg'
 import Typical from 'react-typical'
 import flight from '../images/aire.jpg'
 import flight2 from '../images/confort.jpg'
-import lastLogo from '../images/logoFirst.png'
 import logo from '../images/logo1.png'
 import '../css/home.css'
 
@@ -133,7 +132,7 @@ export default function HomeMain() {
                     <img className="flight-one" src={flight} alt=" tof d'un avion" />
                     <div className="text-snd">
                         <h3><strong>Confort</strong></h3>
-                        <p style={{ position: "relative", top: "12rem" }} className="text-second" style={{ color: "black" }}  > Voler devrait être un plaisir et nous rendrons votre expérience de vol aussi luxueuse et confortable que possibles</p>
+                        <p style={{ position: "relative", top: "12rem", color: "black" }} className="text-second"> Voler devrait être un plaisir et nous rendrons votre expérience de vol aussi luxueuse et confortable que possibles</p>
                         <Link className="link" to="/Avions">
                             En savoir +
                         </Link>
@@ -156,9 +155,20 @@ export default function HomeMain() {
 
                                 <h3>Services</h3>
                                 <ul>
-                                    <li><a href="#">Web design</a></li>
-                                    <li><a href="#">Development</a></li>
-                                    <li><a href="#">Hosting</a></li>
+                                    <li><Link to="/Avions">
+                                        Avions
+                                    </Link></li>
+                                    <li><Link to="/Register">
+                                        Destination
+                                    </Link></li>
+                                    <li><Link to="/Reserch">
+                                        Réserver un vol
+                                    </Link></li>
+                                    <li> <Link to="/Aproposdenous">
+                                        A propos de nous
+                                    </Link></li>
+
+
                                 </ul>
                             </div>
                             <div class="col-sm-6 col-md-3 item">
@@ -184,12 +194,6 @@ export default function HomeMain() {
                     </div>
                 </footer>
             </div>
-
-
-
-
-
-
 
         </>
     )
