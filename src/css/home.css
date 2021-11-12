@@ -1,0 +1,255 @@
+/* le premier block */
+
+.img-plane{
+  width: 100%;
+}
+
+/* fin premier block */
+
+
+/* La 2em partie carousel */
+/* home est dans carousel et reservation de vol  */
+.home-title{
+    text-align: center;
+    margin: 55px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,sans-serif;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.d-block {
+
+  width: 50%;
+  margin-left: 25%;
+  background-size: cover;
+  filter: drop-shadow(0 0 0.75rem rgb(46, 45, 45));
+}
+
+.paris{
+
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+}
+.rome{
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+/* fin de la partie carousel */
+
+
+
+/* 3 em block reservation de vol */
+/* image side */
+.booking-flight{
+  filter: drop-shadow(0 0 0.75rem rgb(46, 45, 45));
+  width: 25%;
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+}
+
+
+/* le button de reservation */
+.btn-booking {
+  align-items: center;
+  appearance: none;
+  background-color: rgb(231 231 231);
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgb(25, 0, 255) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48pbx;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 15px;
+margin-left: 45%;
+}
+
+.btn-booking:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+
+
+
+.text-descri h2  {
+  color: black;
+  line-height: 35px;
+  
+}
+
+.text-descri p  {
+  color: black;
+}
+
+.all-block{
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.text-descri{
+  text-align: center;
+  padding: 7rem;
+}
+
+
+/* fin 3em block re */
+
+
+/* 4 em block Nos avions  */
+
+.flight-one{
+  width: 45%;
+  margin-top: -17%;
+  border-radius: 17px;
+}
+
+.flight-two{
+  width: 45%;
+  margin-left:45%;
+  position: relative;
+  bottom: 23vh;
+  border-radius: 17px;
+}
+
+.img-cont{
+  margin-left: 6rem;
+  font-size: 1.1rem;
+}
+
+.first-block{
+  margin-inline-start: 52%;
+  margin-top: 10rem;
+  width: 28rem;
+}
+
+
+.text-second{
+  float: left;
+}
+
+.text-snd{
+    margin-inline: 49px;
+    position: relative;
+    top: 85px;
+    width: 27%;
+}
+
+/* footer */
+
+.footer-dark {
+  padding:50px 0;
+  color:#f0f9ff;
+  background-color:#282d32;
+}
+
+.footer-dark h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-dark ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-dark ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity:0.8;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom:36px;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom:0;
+  }
+}
+
+.footer-dark .item.text p {
+  opacity:0.6;
+  margin-bottom:0;
+}
+
+.footer-dark .item.social {
+  text-align:center;
+}
+
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align:center;
+    margin-top:20px;
+  }
+}
+
+.footer-dark .item.social > a {
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  margin:0 8px;
+  color:#fff;
+  opacity:0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity:0.9;
+}
+
+.copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+}
+
+.logo{
+   width: 18%;
+   height:7rem;
+   border-radius: 17px;
+ }
+.copyright {
+  text-align:center;
+  padding-top:40px;
+  opacity:1.3;
+  font-size:13px;
+  margin-bottom:0;
+  margin-right: 11%;
+}
