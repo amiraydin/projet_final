@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+
 import CardPlane from "../component/Card.avion";
-import '../css/avion.css'
+
 
 export default function Avions() {
-  
+  const [images, setImages] = useState([])
+
+  useEffect(() => {
+    fetch('https://picsum.photos/v2/list?page=2&limit=10')
+      .then(res => res.json())
+      .then(json => setImages(json))
+  }, [])
 
 
 
@@ -11,12 +18,13 @@ export default function Avions() {
   return (
 
     <>
+      <div className="header">
+      </div>
+      <div className='container-card-avion'>
 
-      <div className='container-avion'>
-        <div className="cloud-avion-1"></div>
-        <div className="cloud-avion-2"></div>
-        <div className="cloud-avion-3"></div>
-        <CardPlane />
+        {images.map(image => (
+          <CardPlane images={image} />
+        ))}
       </div>
 
     </>
