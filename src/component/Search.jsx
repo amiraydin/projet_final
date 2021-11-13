@@ -51,11 +51,13 @@ export default function Search() {
                         </div>
                     </div>
 
-                    <div className="mb-3">
+                    <div className="mb-3 fusterA">
                         <input type="text" onChange={(e) => setAller(e.target.value)} className="form-control" placeholder="From ..." />
+                        <i class="fas fa-plane-departure"></i>
                     </div>
-                    <div className="mb-3">
+                    <div className="mb-3 fusterB">
                         <input type="text" onChange={(e) => setTo(e.target.value)} className="form-control" placeholder="To..." />
+                        <i className="fas fa-plane-arrival"></i>
                     </div>
                     <div className="mb-3">
                         <input type="date" onChange={(e) => setDate(e.target.value)} className="form-control" />
@@ -63,8 +65,9 @@ export default function Search() {
                     <div className="mb-3">
                         <input type="time" onChange={(e) => setTime(e.target.value)} className="form-control" />
                     </div>
-                    <div className="mb-3">
+                    <div className="mb-3 passenger">
                         <input type="number" onChange={(e) => setpassengers(e.target.value)} className="form-control" placeholder="passengers" />
+                        <i className="fa fa-user fa-lg"></i>
                     </div>
                     {!retour &&
                         <>
