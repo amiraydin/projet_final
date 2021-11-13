@@ -16,7 +16,7 @@ font-family: 'Saira', sans-serif; */
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    /* background-color: black; */
 }
 
 /*=============== style container of the avion card =================*/
@@ -40,9 +40,6 @@ body {
     width: 100%;
     font-family: 'Saira', sans-serif;
     background-color: rgb(35, 35, 35);
-    /* background-image: url('../images/backgrounds/backgroundCuir.jpg'); 
-     background-size: cover;
-  background-color: #fff; */
 }
 
 /*=============== style of the card component =================*/
@@ -50,14 +47,13 @@ body {
 .card {
     width: 260px;
     height: 260px;
-    margin: 20px 0;
+    margin: 20px 5px;
     background-color: #ebebeb;
     border: 2px solid #091932;
     border-radius: 5px;
-    /* color: rgba(255, 196, 0, 0.659); */
     color: black;
     animation: animate-card 1.6s ease-in-out;
-    transition:  .5s linear;
+    transition: all .5s linear;
 }
 
 .card:hover {    
@@ -66,10 +62,10 @@ body {
 
 @keyframes animate-card {
     0% {
-        transform: translateY(1200px);
+        transform: translateY(1200px) ;
     }
     100% {
-        transform: translateY(0px);
+        transform: translateY(0px) ;
     }
 }
 

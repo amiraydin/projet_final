@@ -22,7 +22,7 @@ export default function Avions() {
       </div>
       <div className='container-card-avion'>
 
-        {images.map(image => (
+        {images && images.map(image => (
           <CardPlane images={image} />
         ))}
       </div>
