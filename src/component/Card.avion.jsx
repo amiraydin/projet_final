@@ -73,7 +73,7 @@ export default function CardPlane(props) {
             </li>
           </ul>
         </div>
-          <button onClick={() => categories('TurboProps')}>show</button>
+          <button onClick={() => categories('turboprops')}>show</button>
       </div>
 
       <div className="card" >
@@ -109,7 +109,7 @@ export default function CardPlane(props) {
             </li>
           </ul>
         </div>
-        <button onClick={() => categories('LigthJets')}>show</button>
+        <button onClick={() => categories('lightJet')}>show</button>
       </div>
 
 
@@ -146,44 +146,10 @@ export default function CardPlane(props) {
             </li>
           </ul>
         </div>
-        <button onClick={() => categories('MidSizeJets')}>show</button>
+        <button onClick={() => categories('midSizeJet')}>show</button>
       </div>
 
-      <div className="card" >
-        {/* <div className="card-container-img">
-          <img className="img-card" src='' alt='' />
-        </div> */}
-        <div className="card-container-infos">
-          <h3>super-mid jets</h3>
-          <ul className='list'>
-            <li className="list-item list-item-icon">
-              <span className='icon'>
-                <i class='bx bxs-plane'></i>
-              </span>
-              <span className='title'>Max pax:12</span>
-            </li>
-            <li className="list-item list-item-icon">
-              <span className='icon'>
-                <i class='bx bxs-group'></i>
-              </span>
-              <span className='title'>max range:3300 nm</span>
-            </li>
-            <li className="list-item list-item-icon">
-              <span className='icon'>
-                <i class='bx bx-up-arrow-alt'></i>
-              </span>
-              <span className='title'>cabin heigth: 6'0</span>
-            </li>
-            <li className="list-item list-item-icon">
-              <span className='icon'>
-                <i class='bx bx-credit-card'></i>
-              </span>
-              <span className='title'>hourly rate:$3,700 - $5,700</span>
-            </li>
-          </ul>
-        </div>
-        <button onClick={() => categories('SuperMidJets')}>show</button>
-      </div>
+        
 
 
       <div className="card" >
@@ -219,7 +185,7 @@ export default function CardPlane(props) {
             </li>
           </ul>
         </div>
-        <button onClick={() => categories('HeavyJets')}>show</button>
+        <button onClick={() => categories('heavyJet')}>show</button>
       </div>
 
 
