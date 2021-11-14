@@ -41,8 +41,8 @@ export default function Avions() {
         <>
           <div className="header">
             <h1 style={{ position: "absolute", top: "20%", left: "17%", color: "white", zIndex: "0", width: "auto" }}><strong>Check</strong>  {' '}
-              <Typical loop={1} wrapper='b' steps={[
-                'Our Light Jets', 1000, 'Our Medium Jets', 1000, 'Our Heavy Jets', 1000, 'that shit !', 100
+              <Typical loop={1} wrapper='d' steps={[
+                'Our Light Jets', 2000, 'Our Medium Jets', 2000, 'Our Heavy Jets', 2000, 'That 💩!', 100
               ]} />
             </h1>
           </div>
