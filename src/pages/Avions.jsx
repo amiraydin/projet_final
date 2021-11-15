@@ -1,15 +1,21 @@
 import React, { useEffect, useState } from "react";
-
+import Typical from 'react-typical'
 import CardPlane from "../component/Card.avion";
 
+import DataJets from "../component/Data.Jets";
 
 export default function Avions() {
-  const [images, setImages] = useState([])
+  const [categories, setCategories] = useState('')
+
+  // useEffect(() => {
+  //   fetch('https://picsum.photos/v2/list?page=2&limit=10')
+  //     .then(res => res.json())
+  //     .then(json => setImages(json))
+  // }, [])
+
 
   useEffect(() => {
-    fetch('https://picsum.photos/v2/list?page=2&limit=10')
-      .then(res => res.json())
-      .then(json => setImages(json))
+    setCategories('')
   }, [])
 
 
@@ -18,15 +24,17 @@ export default function Avions() {
   return (
 
     <>
-      <div className="header">
-      </div>
-      <div className='container-card-avion'>
-
-        {images && images.map(image => (
-          <CardPlane images={image} />
-        ))}
-      </div>
-
+      {categories ?
+        <>
+          <DataJets category={categories} />
+          
+        </>
+        :
+        <>
+          <CardPlane categories={setCategories} />
+          
+        </>
+      }
     </>
 
   );
