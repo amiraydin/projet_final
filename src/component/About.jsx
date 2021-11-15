@@ -1,19 +1,18 @@
 import React from 'react'
 import "../css/aboutUs.css"
-import { Link } from "react-router-dom";
-import logo from '../images/logo1.png'
+import Footer from '../component/Footer'
 
-
-import airline1 from "../images/sponsor/Air-france.png"
-import airline2 from "../images/sponsor/american.jpg"
-import airline3 from "../images/sponsor/British.jpg"
-import airline4 from "../images/sponsor/emirates.png"
-import airline5 from "../images/sponsor/Lufthansa-Logo.png"
-import airline6 from "../images/sponsor/qatar-airlines.png"
-import airline7 from "../images/sponsor/flydubai.png"
-import airline8 from "../images/sponsor/malaysia.png"
-import airline9 from "../images/sponsor/suise.jpg"
-import airline10 from "../images/sponsor/maurice.png"
+import airline1 from "../images/about-image/Air-france.png"
+import airline2 from "../images/about-image/american.jpg"
+import airline3 from "../images/about-image/British.jpg"
+import airline4 from "../images/about-image/emirates.png"
+import airline5 from "../images/about-image/Lufthansa-Logo.png"
+import airline6 from "../images/about-image/qatar-airlines.png"
+import airline7 from "../images/about-image/flydubai.png"
+import airline8 from "../images/about-image/malaysia.png"
+import airline9 from "../images/about-image/suise.jpg"
+import airline10 from "../images/about-image/maurice.png"
+import plane_about from "../images/about-image/planeabout.jpg"
 
 
 export default function About() {
@@ -21,6 +20,7 @@ export default function About() {
         <div className="about-full-block">
 
             <div className="about-section">
+                <img className="plane-about" src={plane_about} alt="" srcset="" />
                 <h1>A propos de nous</h1>
                 <p className="team-title" >Notre équipe</p>
             </div>
@@ -98,65 +98,8 @@ export default function About() {
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
 {/* footer */}
-            <div className="footer-dark">
-                <footer>
-                    <div className="container">
-                        <img src={logo} className="logo" alt="" srcset="" />
-                        <div className="row">
-                            <div className="col-sm-6 col-md-3 item">
-
-                                <h3>Services</h3>
-                                <ul>
-                                    <li><Link to="/Avions">
-                                        Avions
-                                    </Link></li>
-                                    <li><Link to="/Register">
-                                        Destination
-                                    </Link></li>
-                                    <li><Link to="/Reserch">
-                                        Réserver un vol
-                                    </Link></li>
-                                    <li> <Link to="/Aproposdenous">
-                                        A propos de nous
-                                    </Link></li>
-
-
-                                </ul>
-                            </div>
-                            <div className="col-sm-6 col-md-3 item">
-                                <h3>About</h3>
-                                <ul>
-                                    <li> <Link className="#" to="/Avions">
-                                        Avions
-                                    </Link></li>
-                                    <li><Link className="#" to="/Register">
-                                        Destination
-                                    </Link></li>
-                                    <li><Link className="#" to="/Reserch">
-                                        Réserver un vol
-                                    </Link></li>
-                                </ul>
-                            </div>
-                            <div className="col-md-6 item text">
-                                <h3>Company Name</h3>
-                                <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
-                            </div>
-                            <div><p className="copyright">Company Name © 2018</p></div>
-                        </div>
-                    </div>
-                </footer>
-            </div>
+            <Footer/>
         </div>
         
     )
