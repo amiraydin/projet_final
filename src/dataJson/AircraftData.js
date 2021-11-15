@@ -14,7 +14,7 @@ const dataAircrafts =
     [{
         turboprops: {
             "title": "SAAB 340",
-            images: {
+            "images": {
                 exterior: turboExterior,
                 cabin: turboCabin
             },
@@ -31,7 +31,7 @@ const dataAircrafts =
 
         lightJet: {
             "title": "CESSNA CITATION CJ4",
-            images: {
+            "images": {
                 exterior: lightExterior,
                 cabin: lightCabin
             },
@@ -47,7 +47,7 @@ const dataAircrafts =
         },
         midSizeJet: {
             "title": "Gulfstream G150",
-            images: {
+            "images": {
                 exterior: midSizeExterior,
                 cabin: midSizeCabin
             },
@@ -63,7 +63,7 @@ const dataAircrafts =
         },
         heavyJet: {
             "title": "Bombardier Global 5000",
-            images: {
+            "images": {
                 exterior: heavyExterior,
                 cabin: heavyCabin
             },

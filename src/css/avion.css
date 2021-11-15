@@ -35,7 +35,7 @@ body {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding-top: 200px;
+    padding-top: 100px;
     /* display: grid;
     grid-template-columns: repeat(auto-fill, 30%);
     grid-template-rows: repeat(auto-fill, auto);
@@ -45,7 +45,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     font-family: 'Saira', sans-serif;
     background-image: url('../images/backgrounds/backgroundCuir.jpg');
     background-size: cover;
