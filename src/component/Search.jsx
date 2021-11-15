@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../css/input.css'
-import image from '../images/video.mp4'
+import image from '../video/hdtack.mp4'
+import Typical from 'react-typical'
+
 // import img from '../images/airplan.jpg'
 // import { Form, Button, Col, Row } from 'react-bootstrap';
 
@@ -32,62 +34,77 @@ export default function Search() {
     }
 
     return (
-        <div className="body col-11">
+        <>
             <video className="vid" loop muted autoPlay>
                 <source src={image} />
             </video>
-            <div className="container row col-6 justify-content-start ms-5 rounded mt-4 p-3">
-                <form className="p-4 col-10" >
-                    <div className="">
-                        <div className="form-check">
-                            <input onChange={(e) => setSimpleGo(e.target.value)} className="form-check-input" value="SIMPLE GO" type="checkbox" id="check1" />
-                            <label htmlFor="check1"><p>SIMPLE GO</p></label>
-                        </div>
-                    </div>
+            <div className="col-12">
+                <div className="container rounded mt-4 p-3">
+                    {/* form */}
                     <div>
-                        <div className="form-check">
-                            <input type="checkbox" onChange={(e) => setGoAndReturn(e.target.value)} className="form-check-input" value="GO AND RETURN" id="check2" onClick={() => Affiche()} />
-                            <label htmlFor="check2"><p>GO-RETURN</p></label>
-                        </div>
-                    </div>
-
-                    <div className="mb-3 fusterA">
-                        <input type="text" onChange={(e) => setAller(e.target.value)} className="form-control" placeholder="From ..." />
-                        <i class="fas fa-plane-departure"></i>
-                    </div>
-                    <div className="mb-3 fusterB">
-                        <input type="text" onChange={(e) => setTo(e.target.value)} className="form-control" placeholder="To..." />
-                        <i className="fas fa-plane-arrival"></i>
-                    </div>
-                    <div className="mb-3">
-                        <input type="date" onChange={(e) => setDate(e.target.value)} className="form-control" />
-                    </div>
-                    <div className="mb-3">
-                        <input type="time" onChange={(e) => setTime(e.target.value)} className="form-control" />
-                    </div>
-                    <div className="mb-3 passenger">
-                        <input type="number" onChange={(e) => setpassengers(e.target.value)} className="form-control" placeholder="passengers" />
-                        <i className="fa fa-user fa-lg"></i>
-                    </div>
-                    {!retour &&
-                        <>
+                        <form className="p-4 col-5" >
                             <div>
-                                <p className="p-search">Return :</p>
+                                <div className="form-check">
+                                    <input onChange={(e) => setSimpleGo(e.target.value)} className="form-check-input" value="SIMPLE GO" type="checkbox" id="check1" />
+                                    <label htmlFor="check1"><p>SIMPLE GO</p></label>
+                                </div>
+                            </div>
+                            <div>
+                                <div className="form-check">
+                                    <input type="checkbox" onChange={(e) => setGoAndReturn(e.target.value)} className="form-check-input" value="GO AND RETURN" id="check2" onClick={() => Affiche()} />
+                                    <label htmlFor="check2"><p>GO-RETURN</p></label>
+                                </div>
+                            </div>
+
+                            {/* start of input  */}
+                            <div className="mb-3 fusterA">
+                                <input type="text" onChange={(e) => setAller(e.target.value)} className="form-control" placeholder="From ..." />
+                                <i class="fas fa-plane-departure"></i>
+                            </div>
+                            <div className="mb-3 fusterB">
+                                <input type="text" onChange={(e) => setTo(e.target.value)} className="form-control" placeholder="To..." />
+                                <i className="fas fa-plane-arrival"></i>
                             </div>
                             <div className="mb-3">
-                                <input type="date" onChange={(e) => setDateretour(e.target.value)} className="form-control" />
+                                <input type="date" onChange={(e) => setDate(e.target.value)} className="form-control" />
                             </div>
                             <div className="mb-3">
-                                <input type="time" onChange={(e) => setTimeretour(e.target.value)} className="form-control" />
+                                <input type="time" onChange={(e) => setTime(e.target.value)} className="form-control" />
                             </div>
-                        </>
-                    }
+                            <div className="mb-3 passenger">
+                                <input type="number" onChange={(e) => setpassengers(e.target.value)} className="form-control" placeholder="passengers" />
+                                <i className="fa fa-user fa-lg"></i>
+                            </div>
+                            {!retour &&
+                                <>
+                                    <div>
+                                        <p className="p-search">Return :</p>
+                                    </div>
+                                    <div className="mb-3">
+                                        <input type="date" onChange={(e) => setDateretour(e.target.value)} className="form-control" />
+                                    </div>
+                                    <div className="mb-3">
+                                        <input type="time" onChange={(e) => setTimeretour(e.target.value)} className="form-control" />
+                                    </div>
+                                </>
+                            }
 
-                    <button type="submit" onClick={handleSubmit} className="btn">Submit</button>
-                </form>
+                            <button type="submit" onClick={handleSubmit} className="btn">Submit</button>
+                        </form>
+                    </div>
 
+                    <div className="position-absolute top-50 start-50 text-center d-flex flex-row-reverse" >
+                        <h1 style={{ color: "white" }}>
+                            {/* <strong></strong>  {' '} */}
+                            <Typical loop={Infinity} wrapper="b" steps={[
+                                'PARIS', 1000, 'LONDON', 1000, 'NEW YORK', 1000, 'All around the world', 1000
+                            ]} />
+                        </h1>
+                    </div>
+
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 

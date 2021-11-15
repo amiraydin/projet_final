@@ -6,7 +6,8 @@ import imageOne from '../images/destination_photo/paris.jpg'
 import imageTwo from '../images/destination_photo/ny.jpg'
 import imageThird from '../images/destination_photo/rome.jpg'
 import { Link } from "react-router-dom";
-import homeimg from '../images/destination_photo/planeh.jpg'
+// import homeimg from '../images/destination_photo/planeh.jpg'
+import back from '../video/hdback.mp4'
 import Typical from 'react-typical'
 import flight from '../images/aire.jpg'
 import flight2 from '../images/confort.jpg'
@@ -18,11 +19,14 @@ export default function HomeMain() {
         <>
 
             {/* Le premier block */}
-            <div>
-                <img src={homeimg} alt="" className="img-plane" />
-                <h1 style={{ position: "absolute", top: "55%", left: "37%", color: "black", zIndex: "0" }}><strong>Welcome</strong>  {' '}
+            <div className="col-12">
+                {/* <img src={homeimg} alt="" className="img-plane" /> */}
+                <video className="img-plane " loop muted autoPlay>
+                    <source src={back} />
+                </video>
+                <h1 style={{ position: "absolute", top: "55%", left: "37%", color: "white", zIndex: "0" }}><strong>Welcome to</strong>  {' '}
                     <Typical loop={Infinity} wrapper="b" steps={[
-                        ' to travel', 1000, ' in SKYJET', 1000
+                        'travel', 1000, 'SKY JET', 1000, 'New world', 1000
                     ]} />
                 </h1>
             </div>
