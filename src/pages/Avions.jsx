@@ -27,10 +27,12 @@ export default function Avions() {
       {categories ?
         <>
           <DataJets category={categories} />
+          
         </>
         :
         <>
           <CardPlane categories={setCategories} />
+          
         </>
       }
     </>

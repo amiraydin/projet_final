@@ -2,6 +2,7 @@ import React from 'react';
 import data from '../dataJson/AircraftData'
 import Typical from 'react-typical'
 import '../css/detail.avion.css'
+import Footer from './Footer';
 
 
 
@@ -69,6 +70,8 @@ const DataJets = (props) => {
                     <section >
                         <img className="img-cabin" src={chosenCategory.images.cabin} alt={chosenCategory.title} />
                     </section>
+                    <div className="line-separation-blocks-3"></div>
+                    <Footer />
                 </>
             }
         </div>
