@@ -59,6 +59,16 @@ body {
     overflow: hidden;
 }
 
+.line-separation-blocks-1 {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(45deg, rgb(28, 28, 28), rgb(223, 190, 1));
+}
+.line-separation-blocks-2 {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(45deg, rgb(223, 190, 1), rgb(28, 28, 28));
+}
 .description-specification {
     position: relative;
     display: grid;
@@ -150,5 +160,4 @@ body {
     width: 100vw;
     height: auto;
     overflow: hidden;
-    padding: 10px 30px 10px 10px;
 }

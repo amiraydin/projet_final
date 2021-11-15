@@ -33,6 +33,7 @@ const DataJets = (props) => {
                     <div className="header-avion-detail">
                         <img className="img-header" src={chosenCategory.images.exterior} alt={chosenCategory.title} />
                     </div>
+                    <div className="line-separation-blocks-1"></div>
                     <section className="description-specification">
                         <div className="aircraft-info">
                             <div className="title-lines">
@@ -43,7 +44,7 @@ const DataJets = (props) => {
                                     <div className="line-3"></div>
                                 </div>
                             </div>
-                            <p>{chosenCategory.description}</p>
+                            <p>{chosenCategory.description[1]}</p>
                         </div>
                         <div className="aircraft-specification">
 
@@ -63,6 +64,7 @@ const DataJets = (props) => {
                             </ul>
                         </div>
                     </section>
+                    <div className="line-separation-blocks-2"></div>
 
                     <section >
                         <img className="img-cabin" src={chosenCategory.images.cabin} alt={chosenCategory.title} />
