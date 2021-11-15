@@ -18,7 +18,7 @@ export default function Footer() {
                                     <li><Link to="/Avions">
                                         Avions
                                     </Link></li>
-                                    <li><Link to="/Register">
+                                    <li><Link to="/Destination">
                                         Destination
                                     </Link></li>
                                     <li><Link to="/Reserch">
@@ -37,7 +37,7 @@ export default function Footer() {
                                     <li> <Link className="#" to="/Avions">
                                         Avions
                                     </Link></li>
-                                    <li><Link className="#" to="/Register">
+                                    <li><Link className="#" to="/Destination">
                                         Destination
                                     </Link></li>
                                     <li><Link className="#" to="/Reserch">
