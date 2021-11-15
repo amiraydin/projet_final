@@ -10,7 +10,7 @@ import homeimg from '../images/destination_photo/planeh.jpg'
 import Typical from 'react-typical'
 import flight from '../images/aire.jpg'
 import flight2 from '../images/confort.jpg'
-import logo from '../images/logo1.png'
+import Footer from "../component/Footer"
 import '../css/home.css'
 
 export default function HomeMain() {
@@ -146,54 +146,9 @@ export default function HomeMain() {
 
 
             {/* dernier block de footer  */}
-            <div class="footer-dark">
-                <footer>
-                    <div class="container">
-                        <img src={logo} className="logo" alt="" srcset="" />
-                        <div class="row">
-                            <div class="col-sm-6 col-md-3 item">
-
-                                <h3>Services</h3>
-                                <ul>
-                                    <li><Link to="/Avions">
-                                        Avions
-                                    </Link></li>
-                                    <li><Link to="/Register">
-                                        Destination
-                                    </Link></li>
-                                    <li><Link to="/Reserch">
-                                        Réserver un vol
-                                    </Link></li>
-                                    <li> <Link to="/Aproposdenous">
-                                        A propos de nous
-                                    </Link></li>
-
-
-                                </ul>
-                            </div>
-                            <div class="col-sm-6 col-md-3 item">
-                                <h3>About</h3>
-                                <ul>
-                                    <li> <Link className="#" to="/Avions">
-                                        Avions
-                                    </Link></li>
-                                    <li><Link className="#" to="/Register">
-                                        Destination
-                                    </Link></li>
-                                    <li><Link className="#" to="/Reserch">
-                                        Réserver un vol
-                                    </Link></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6 item text">
-                                <h3>Company Name</h3>
-                                <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
-                            </div>
-                            <div><p class="copyright">Company Name © 2018</p></div>
-                        </div>
-                    </div>
-                </footer>
-            </div>
+            
+            <Footer/>
+                    
 
         </>
     )
