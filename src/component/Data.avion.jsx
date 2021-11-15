@@ -1,22 +1,32 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import data from '../dataJson/AircraftData'
+import Typical from 'react-typical'
+
 
 
 const DataJets = (props) => {
     const { category } = props
-    const chosenCategory = data.category
+    const chosenCategory = data[category]
     console.log('data :>> ', data);
     console.log('category :>> ', category);
-    console.log('chosenCategory.images.exterior :>> ', data.category);
+    console.log('chosenCategory :>> ', chosenCategory);
 
 
 
     return (
 
+
         <div>
+            
+                <h1 style={{ position: "absolute", top: "20%", left: "17%", color: "white", zIndex: "0", width: "auto" }}>
+                    <Typical loop={1} wrapper='b' steps={[
+                        'Model', 1000, chosenCategory.title, 1000
+                    ]} />
+                </h1>
+                <button onClick={()=>window.location.reload()} style={{ position: "absolute", top: "20%", right: "17%", color: "black", zIndex: "0", width: "auto" }} >return</button>
+            
             {chosenCategory &&
                 <>
-                    <h1>hello</h1>
                     <div className="header">
                         <img src={chosenCategory.images.exterior} alt={chosenCategory.title} />
                     </div>

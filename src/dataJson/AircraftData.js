@@ -11,7 +11,7 @@ import heavyCabin from '../images/AircraftsSofiane/heavyJet/bombardier-global-50
 
 
 const dataAircrafts =
-    [{
+    {
         turboprops: {
             "title": "SAAB 340",
             "images": {
@@ -80,6 +80,6 @@ const dataAircrafts =
 
 
 
-    }]
+    }
 
 export default dataAircrafts

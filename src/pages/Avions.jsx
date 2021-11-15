@@ -26,13 +26,7 @@ export default function Avions() {
     <>
       {categories ?
         <>
-          <div className='containerJetCategory'>
-            <h1 style={{ position: "absolute", top: "20%", left: "17%", color: "white", zIndex: "0", width: "auto" }}>
-              <Typical loop={1} wrapper='b' steps={[
-                'Model', 1000, categories, 1000
-              ]} />
-            </h1>
-          </div>
+          
           <div className='container-avion-detail'>
             <DataJets category={categories}/>
           </div>
