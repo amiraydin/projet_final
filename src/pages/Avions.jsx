@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Typical from 'react-typical'
+// import Typical from 'react-typical'
 import CardPlane from "../component/Card.avion";
 
 import DataJets from "../component/Data.Jets";
@@ -27,12 +27,12 @@ export default function Avions() {
       {categories ?
         <>
           <DataJets category={categories} />
-          
+
         </>
         :
         <>
           <CardPlane categories={setCategories} />
-          
+
         </>
       }
     </>
