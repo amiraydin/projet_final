@@ -34,7 +34,7 @@ export default function HomeMain() {
 
             {/* 2em Carousel les photos des destinations */}
             <div className="home-class">
-                <h1 className='home-title'>Trouver votre destination</h1>
+                <h1 className='home-title'>Trouvez votre destination</h1>
                 <div className="line-title"></div>
             </div>
             <div className="carousel">
@@ -79,7 +79,7 @@ export default function HomeMain() {
 
             {/* 3em Reserver un vol */}
             <div className="home-class">
-                <h1 className='home-title'>Réserver un vol</h1>
+                <h1 className='home-title'>Réservez votre vol</h1>
                 <div className="line-title"></div>
             </div>
 
@@ -107,7 +107,7 @@ export default function HomeMain() {
                 </div>
             </div>
             <Link className="nav-link" to="/Reserch">
-                <button className="btn-booking">Réserver un vol</button>
+                <button className="btn-booking">Réservez votre vol</button>
             </Link>
 
             {/* fin 3em reserver un vol */}
@@ -118,7 +118,7 @@ export default function HomeMain() {
             {/* 4 em block Nos avions  */}
 
             <div className="home-class">
-                <h1 className='home-title'>Nos avions</h1>
+                <h1 className='home-title'>Vos avions</h1>
                 <div className="line-title"></div>
             </div>
 

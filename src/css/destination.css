@@ -6,6 +6,14 @@
     grid-column: 1 / span 12 ;
 }
 
+.small-title {
+    color: black;
+}
+
+.projet-link {
+    color: black;
+}
+
 /* Projet Left */
 .projet-left .box {
     grid-column: 3 / span 5;
@@ -15,7 +23,7 @@
 
 .projet-info {
     background: rgb(233, 227, 227);
-    padding: 20px 20px 30px 20px;
+    padding: 11px 20px 0px 18px;
 }
 
 .projet-left .projet-info {
@@ -49,6 +57,15 @@
     /* visibility: hidden; */
     width: 50vw;
     border-radius: 25px;
+    height: 50vh;
+}
+
+.AKairports {
+    color: black;
+}
+
+p.projet-link {
+    margin-bottom: 0;
 }
 
 .overlay {
@@ -60,6 +77,7 @@
     width: 100%;
     height: 100%;
 }
+
 
 /* canvas { width: 100%; height: 100% } */
 

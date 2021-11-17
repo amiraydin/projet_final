@@ -49,29 +49,29 @@ export default function Search() {
                             <div>
                                 <div className="form-check">
                                     <input onChange={(e) => setSimpleGo(e.target.value)} className="form-check-input" value="SIMPLE GO" type="checkbox" id="check1" />
-                                    <label htmlFor="check1"><p>SIMPLE GO</p></label>
+                                    <label htmlFor="check1"><p>Aller Simple</p></label>
                                 </div>
                             </div>
                             <div>
                                 <div className="form-check">
                                     <input type="checkbox" onChange={(e) => setGoAndReturn(e.target.value)} className="form-check-input" value="GO AND RETURN" id="check2" onClick={() => Affiche()} />
-                                    <label htmlFor="check2"><p>GO-RETURN</p></label>
+                                    <label htmlFor="check2"><p>Aller-Retour</p></label>
                                 </div>
                             </div>
 
                             {/* start of input  */}
-                            <div className="mb-3 fusterA">
+                            <div className="mb-3">
                                 <input type="text" onChange={(e) => setNom(e.target.value)} className="form-control" placeholder="Nom ..." />
                             </div>
-                            <div className="mb-3 fusterA">
+                            <div className="mb-3">
                                 <input type="text" onChange={(e) => setPrenom(e.target.value)} className="form-control" placeholder="Prénom ..." />
                             </div>
                             <div className="mb-3 fusterA">
-                                <input type="text" onChange={(e) => setAller(e.target.value)} className="form-control" placeholder="From ..." />
+                                <input type="text" onChange={(e) => setAller(e.target.value)} className="form-control" placeholder="Départ ..." />
                                 <i class="fas fa-plane-departure"></i>
                             </div>
                             <div className="mb-3 fusterB">
-                                <input type="text" onChange={(e) => setTo(e.target.value)} className="form-control" placeholder="To..." />
+                                <input type="text" onChange={(e) => setTo(e.target.value)} className="form-control" placeholder="Arrivée ..." />
                                 <i className="fas fa-plane-arrival"></i>
                             </div>
                             <div className="mb-3">
@@ -81,13 +81,13 @@ export default function Search() {
                                 <input type="time" onChange={(e) => setTime(e.target.value)} className="form-control" />
                             </div>
                             <div className="mb-3 passenger">
-                                <input type="number" onChange={(e) => setpassengers(e.target.value)} className="form-control" placeholder="passengers" />
+                                <input type="number" onChange={(e) => setpassengers(e.target.value)} className="form-control" placeholder="Passagers" />
                                 <i className="fa fa-user fa-lg"></i>
                             </div>
                             {!retour &&
                                 <>
                                     <div>
-                                        <p className="p-search">Return :</p>
+                                        <p className="p-search">Retour :</p>
                                     </div>
                                     <div className="mb-3">
                                         <input type="date" onChange={(e) => setDateretour(e.target.value)} className="form-control" />
@@ -98,7 +98,7 @@ export default function Search() {
                                 </>
                             }
 
-                            <button type="submit" onClick={handleSubmit} className="btn">Submit</button>
+                            <button type="submit" onClick={handleSubmit} className="btn">Envoyez</button>
                         </form>
                     </div>
 
@@ -106,7 +106,7 @@ export default function Search() {
                         <h1 style={{ color: "white" }}>
                             {/* <strong></strong>  {' '} */}
                             <Typical loop={Infinity} wrapper="b" steps={[
-                                'PARIS', 1000, 'LONDON', 1000, 'NEW YORK', 1000, 'All around the world', 1000
+                                'PARIS', 1000, 'LONDON', 1000, 'NEW YORK', 1000, 'Partout dans le monde', 1000
                             ]} />
                         </h1>
                     </div>
