@@ -86,7 +86,7 @@ export default function Destination() {
                         <h6 className="AKairports">Tour Eiffel, Cathédrale Notre-Dame, Centre Pompidou, Musée du Louvres, Paris est une des villes les plus touristiques du monde avec près de 20 millions de visiteurs par an.</h6>
                         <p href="/Destination" className="projet-link">Les aéroports :
                             <ul className="AKairports">
-                                <li>Roissy Charles-De-Gaulle (CDG)</li>
+                                <li>Roissy Charles-De-Gaulle </li>
                                 <li>Aéroport de Paris-Orly</li>
                                 <li>Aéroport de Paris-Le Bourget</li>
                             </ul>
@@ -108,8 +108,8 @@ export default function Destination() {
                         <h6 className="AKairports">C'est la capitale du style américain, là où se trouvent l'Empire State Building, Times Square, Central Park et la statue de liberté</h6>
                         <p href="/Destination" className="projet-link"> Les aéroports :
                             <ul className="AKairports">
-                                <li>JFK International Airport</li>
-                                <li> LaGuardia Airport</li>
+                                <li>JFK International Airport </li>
+                                <li> LaGuardia Airport </li>
                                 <li>Newark Liberty International Airport</li>
                             </ul>
                         </p>
