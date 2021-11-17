@@ -6,7 +6,7 @@ import logo from '../images/logo1.png'
 export default function Footer() {
     return (
         <div>
-            <div class="footer-dark">
+            <div class="footer-dark text-center">
                 <footer>
                     <div class="container">
                         <img src={logo} className="logo" alt="" srcset="" />
