@@ -1,9 +1,41 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+// import Typical from 'react-typical'
+import CardPlane from "../component/Card.avion";
+
+import DataJets from "../component/Data.Jets";
 
 export default function Avions() {
+  const [categories, setCategories] = useState('')
+
+  // useEffect(() => {
+  //   fetch('https://picsum.photos/v2/list?page=2&limit=10')
+  //     .then(res => res.json())
+  //     .then(json => setImages(json))
+  // }, [])
+
+
+  useEffect(() => {
+    setCategories('')
+  }, [])
+
+
+
+
   return (
-    <div>
-      <h1>avions</h1>
-    </div>
+
+    <>
+      {categories ?
+        <>
+          <DataJets category={categories} />
+
+        </>
+        :
+        <>
+          <CardPlane categories={setCategories} />
+
+        </>
+      }
+    </>
+
   );
 }
