@@ -9,7 +9,7 @@ export default function Navbar() {
 
   const items = [
     {
-      name: (<img src={logo} className="logo-imag" />),
+      name: (<img src={logo} className="logo-imag" alt="logo" />),
       color: "#295070",
       href: "/"
     },
@@ -36,7 +36,13 @@ export default function Navbar() {
       name: "À propos de nous",
       color: "#295070",
       href: "/Aproposdenous"
-    }];
+    },
+    {
+      name: "Covid & Eco",
+      color: "#295070",
+      href: "/Covid"
+    }
+  ];
   /*-----Menu------*/
   const Menu = ({ items }) => {
     const $root = useRef();

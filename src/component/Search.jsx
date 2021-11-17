@@ -8,6 +8,8 @@ import Typical from 'react-typical'
 // import { Form, Button, Col, Row } from 'react-bootstrap';
 
 export default function Search() {
+    const [nom, setNom] = useState("")
+    const [prenom, setPrenom] = useState("")
     const [simpleGo, setSimpleGo] = useState("")
     const [goAndReturn, setGoAndReturn] = useState("")
     const [passengers, setpassengers] = useState("")
@@ -23,7 +25,7 @@ export default function Search() {
         e.preventDefault();
 
         if (aller && to) {
-            console.log('success !', aller, to, date, time, dateretour, timeretour, simpleGo, goAndReturn, passengers);
+            console.log('success !', aller, to, date, time, dateretour, timeretour, simpleGo, goAndReturn, passengers, nom, prenom);
         } else {
             console.error('saisir From ... et To ...');
         }
@@ -57,6 +59,12 @@ export default function Search() {
                             </div>
 
                             {/* start of input  */}
+                            <div className="mb-3 fusterA">
+                                <input type="text" onChange={(e) => setNom(e.target.value)} className="form-control" placeholder="Nom ..." />
+                            </div>
+                            <div className="mb-3 fusterA">
+                                <input type="text" onChange={(e) => setPrenom(e.target.value)} className="form-control" placeholder="Prénom ..." />
+                            </div>
                             <div className="mb-3 fusterA">
                                 <input type="text" onChange={(e) => setAller(e.target.value)} className="form-control" placeholder="From ..." />
                                 <i class="fas fa-plane-departure"></i>

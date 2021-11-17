@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import '../css/destination.css';
 import $ from 'jquery';
 // import { Controller, Scene } from "react-scrollmagic";
