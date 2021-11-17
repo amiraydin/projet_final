@@ -45,6 +45,12 @@ export default function Navbar() {
               </Link>
             </li>
 
+            <li className="nav-item">
+              <Link className="nav-link" to="/Covid">
+                Covid & Eco
+              </Link>
+            </li>
+
           </ul>
         </div>
       </div>

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Typical from 'react-typical'
 import CardPlane from "../component/Card.avion";
 
 import DataJets from "../component/Data.Jets";
