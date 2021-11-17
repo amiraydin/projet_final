@@ -174,12 +174,12 @@
     margin-bottom:0;
   }
   
-  .logo{
-     width: 18%;
-     height:7rem;
-     border-radius: 17px;
-   }
-  .copyright {
+.logo{
+    width: 18%;
+    height:7rem;
+    border-radius: 17px;
+  }
+.copyright {
     text-align:center;
     padding-top:40px;
     opacity:1.3;
@@ -195,5 +195,6 @@
 
   .block-airlines{
       padding: 3rem 15rem;
+      background-color: white;
 
     }

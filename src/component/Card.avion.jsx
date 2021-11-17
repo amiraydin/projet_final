@@ -45,7 +45,7 @@ export default function CardPlane(props) {
     <>
 
       <div className="header-avion-models">
-        <h1 style={{ position: "absolute", top: "15%", left: "10%", color: "white", zIndex: "0", width: "90vw" }}>Aircrafts</h1>
+        {/* <h1 style={{ position: "absolute", top: "15%", left: "10%", color: "white", zIndex: "0", width: "90vw" }}>Aircrafts</h1> */}
       </div>
       <div className="line-separation-blocks-1"></div>
       <div className='container-card-avion'>
