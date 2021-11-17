@@ -21,7 +21,7 @@ export default function About() {
 
             <div className="about-section">
                 <img className="plane-about" src={plane_about} alt="" srcset="" />
-                <h1>A propos de nous</h1>
+                <h1>À propos de nous</h1>
                 <p className="team-title" >Notre équipe</p>
             </div>
             

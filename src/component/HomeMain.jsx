@@ -34,7 +34,7 @@ export default function HomeMain() {
 
             {/* 2em Carousel les photos des destinations */}
             <div className="home-class">
-                <h1 className='home-title'>Trouver votre destination</h1>
+                <h1 className='home-title'>Trouvez votre destination</h1>
                 <div className="line-title"></div>
             </div>
             <div className="carousel">
@@ -79,7 +79,7 @@ export default function HomeMain() {
 
             {/* 3em Reserver un vol */}
             <div className="home-class">
-                <h1 className='home-title'>Réserver un vol</h1>
+                <h1 className='home-title'>Réservez votre vol</h1>
                 <div className="line-title"></div>
             </div>
 
@@ -93,13 +93,13 @@ export default function HomeMain() {
                 <div className="grey-container"></div>
                 <div className="text-descri">
                     <h2> PARTOUT DANS LE MONDE</h2>
-                    <p> Luxury Plane propose des options d’affrètement de jet privé entre tous les aéroports mondiaux</p>
+                    <p> SkyJet propose des options d’affrètement de jet privé entre tous les aéroports mondiaux</p>
                     <br />
                     <h2> SÛRETÉ ET SÉCURITÉ</h2>
-                    <p> Un engagement sans compromis pour la sécurité est ce qui distingue véritablement Luxury Plane. La sérénité de nos clients imprègne chaque décision au sein de notre organisation..</p>
+                    <p> Un engagement sans compromis pour la sécurité est ce qui distingue véritablement SkyJet. La sérénité de nos clients imprègne chaque décision au sein de notre organisation.</p>
                     <br />
                     <h2>AVIONS MODERNES</h2>
-                    <p>Notre affrètement de jet privé est équipé pour satisfaire toutes vos demande – que vous ayez besoin d’une suite d’affaires entièrement équipée ou d’un lieu reposant loin de la maison.</p>
+                    <p>Notre affrètement de jet privé est équipé pour satisfaire toutes vos demandes, que vous ayez besoin d’une suite d’affaires entièrement équipée ou d’un lieu reposant loin de la maison.</p>
                     <br />
                     <h2> RAPIDE ET ABORDABLE</h2>
                     <p>Les prix de l’aviation privée dépendent d’un certain nombre de facteurs, notamment la disponibilité des avions et les frais d’atterrissage à l’aéroport. Vous seriez surpris d’apprendre qu’un vol privé pourrait vous coûter moins cher que prévu.</p>
@@ -107,7 +107,7 @@ export default function HomeMain() {
                 </div>
             </div>
             <Link className="nav-link" to="/Reserch">
-                <button className="btn-booking">Réserver un vol</button>
+                <button className="btn-booking">Réservez votre vol</button>
             </Link>
 
             {/* fin 3em reserver un vol */}
@@ -118,16 +118,16 @@ export default function HomeMain() {
             {/* 4 em block Nos avions  */}
 
             <div className="home-class">
-                <h1 className='home-title'>Nos avions</h1>
+                <h1 className='home-title'>Vos avions</h1>
                 <div className="line-title"></div>
             </div>
 
             <div className="img-cont">
                 <div className="first-block">
-                    <h3><strong>Securite</strong></h3>
-                    <p className="text-first" style={{ color: "black" }} >Tous les avions sont entretenus pour respecter et dépasser les normes de sécurité européennes fixées par l’Agence Européenne de la Sécurité Aérienne (EASA).</p>
+                    <h3><strong>Sécurité</strong></h3>
+                    <p className="text-first" style={{ color: "black" }} >Tous les avions sont entretenus pour respecter les normes de sécurité européennes fixées par l’Agence Européenne de la Sécurité Aérienne(EASA).</p>
                     <Link className="link" to="/Avions">
-                        En savoir +
+                        En savoir plus
                     </Link>
 
                 </div>
@@ -138,7 +138,7 @@ export default function HomeMain() {
                         <h3><strong>Confort</strong></h3>
                         <p style={{ position: "relative", top: "12rem", color: "black" }} className="text-second"> Voler devrait être un plaisir et nous rendrons votre expérience de vol aussi luxueuse et confortable que possibles</p>
                         <Link className="link" to="/Avions">
-                            En savoir +
+                            En savoir plus
                         </Link>
                     </div>
                     <img className="flight-two" src={flight2} alt="tof d'un avion" />

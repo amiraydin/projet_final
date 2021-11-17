@@ -21,19 +21,19 @@ export default function Navbar() {
     },
 
     {
-      name: "Destination",
+      name: "Destinations",
       color: "#295070",
       href: "/Destination"
     },
 
     {
-      name: "Réserver un vol",
+      name: "Réservez votre vol",
       color: "#295070",
       href: "/Reserch"
     },
 
     {
-      name: "A propos de nous",
+      name: "À propos de nous",
       color: "#295070",
       href: "/Aproposdenous"
     }];
@@ -70,7 +70,7 @@ export default function Navbar() {
       });
 
     };
-    // debut de useeffect 
+    // debut de useEffect 
     useEffect(() => {
       animate();
       window.addEventListener('resize', animate);

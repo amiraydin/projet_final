@@ -50,17 +50,17 @@ const DataJets = (props) => {
                         <div className="aircraft-specification">
 
                             <ul className="list-detail-ul">
-                                <li className="list-detail-li">PASSENGER CAPACITY:<span>{chosenCategory.specification['PASSENGER CAPACITY']}</span></li>
+                                <li className="list-detail-li">CAPACITÉ DE PASSAGERS :<span>{chosenCategory.specification['PASSENGER CAPACITY']}</span></li>
 
-                                <li className="list-detail-li">MAX RANGE:<span>{chosenCategory.specification['MAX RANGE'][1]}</span></li>
+                                <li className="list-detail-li">MEILLEUR GAMME :<span>{chosenCategory.specification['MAX RANGE'][1]}</span></li>
 
-                                <li className="list-detail-li">MAX OPERATIONAL SPEED:<span>{chosenCategory.specification['MAX OPERATIONAL SPEED'][1]}</span></li>
+                                <li className="list-detail-li">VITESSE OPÉRATIONNELLE MAX :<span>{chosenCategory.specification['MAX OPERATIONAL SPEED'][1]}</span></li>
 
-                                <li className="list-detail-li">CABIN HEIGHT:<span>{chosenCategory.specification['CABIN HEIGHT'][1]}</span></li>
+                                <li className="list-detail-li">HAUTEUR DE LA CABINE :<span>{chosenCategory.specification['CABIN HEIGHT'][1]}</span></li>
 
-                                <li className="list-detail-li">CABIN WIDTH:<span>{chosenCategory.specification['CABIN WIDTH'][1]}</span></li>
+                                <li className="list-detail-li">LARGEUR DE LA CABINE :<span>{chosenCategory.specification['CABIN WIDTH'][1]}</span></li>
 
-                                <li className="list-detail-li">CABIN LENGTH:<span>{chosenCategory.specification['CABIN LENGTH'][1]}</span></li>
+                                <li className="list-detail-li">LONGUEUR DE LA CABINE :<span>{chosenCategory.specification['CABIN LENGTH'][1]}</span></li>
 
                             </ul>
                         </div>

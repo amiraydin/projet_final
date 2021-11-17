@@ -46,13 +46,13 @@ export default function Search() {
                             <div>
                                 <div className="form-check">
                                     <input onChange={(e) => setSimpleGo(e.target.value)} className="form-check-input" value="SIMPLE GO" type="checkbox" id="check1" />
-                                    <label htmlFor="check1"><p>SIMPLE GO</p></label>
+                                    <label htmlFor="check1"><p>ALLER SIMPLE</p></label>
                                 </div>
                             </div>
                             <div>
                                 <div className="form-check">
                                     <input type="checkbox" onChange={(e) => setGoAndReturn(e.target.value)} className="form-check-input" value="GO AND RETURN" id="check2" onClick={() => Affiche()} />
-                                    <label htmlFor="check2"><p>GO-RETURN</p></label>
+                                    <label htmlFor="check2"><p>ALLER-RETOUR</p></label>
                                 </div>
                             </div>
 

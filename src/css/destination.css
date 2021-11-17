@@ -61,6 +61,10 @@
     height: 100%;
 }
 
+.AKairports{
+    list-style : inside;
+}
+
 /* canvas { width: 100%; height: 100% } */
 
 /* .section {

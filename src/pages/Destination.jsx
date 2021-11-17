@@ -4,9 +4,9 @@ import $ from 'jquery';
 // import { Controller, Scene } from "react-scrollmagic";
 import { Power3, gsap, TimelineLite } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import imag1 from '../images/destination/baot.jpg';
-import imag2 from '../images/destination/mountain.jpg';
-import imag3 from '../images/destination/polynaise.jpg';
+import imag1 from '../images/destination/ArcParis.jpg';
+import imag2 from '../images/destination/NewYorkk.jpg';
+import imag3 from '../images/destination/rome.jpg';
 // import { CSSRulePlugin } from "gsap/CSSRulePlugin";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -71,7 +71,7 @@ export default function Destination() {
     return (
         <>
             <div className="p-4 mt-4">
-                <h1 className="text-center" style={{ color: "white" }}>Choose your Destination</h1>
+                <h1 className="text-center" style={{ color: "white" }}>Choisissez votre destination</h1>
             </div>
             {/* section 1 */}
             <section className="mt-3 section">
@@ -82,9 +82,16 @@ export default function Destination() {
                     </div>
 
                     <div className="projet-info">
-                        <p className="small-title"> Nature</p>
-                        <h4>Explore</h4>
-                        <a href="/Destination" className="projet-link">Exposition </a>
+                        <p className="small-title">PARIS</p>
+                        <h6>Tour Eiffel, Cathédrale Notre-Dame, Centre Pompidou, Musée du Louvres, font de Paris une des villes les plus touristiques du monde avec près de 20 millions de visiteurs par an.</h6>
+                        <p href="/Destination" className="projet-link">Les aéroports :
+                            <ul className="AKairports">
+                                <li>Roissy Charles-De-Gaulle (CDG)</li>
+                                <li>Aéroport de Paris-Orly</li>
+                                <li>Aéroport de Paris-Le Bourget</li>
+                                <li>Aéroport de Paris-Beauvais Tillé (BVA)</li>
+                            </ul> 
+                            </p>
                     </div>
                 </div>
             </section>
@@ -98,9 +105,15 @@ export default function Destination() {
                     </div>
 
                     <div className="projet-info">
-                        <p className="small-title"> Nature</p>
-                        <h4>Explore</h4>
-                        <a href="/Destination" className="projet-link">Exposition </a>
+                        <p className="small-title"> New-York</p>
+                        <h6>C'est la capitale du style américain, là où se trouvent l'Empire State Building, Times Square, Central Park et la statue de liberté</h6>
+                        <p href="/Destination" className="projet-link"> Les aéroports :
+                            <ul className="AKairports">
+                                <li>JFK International Airport (JFK)</li>
+                                <li> LaGuardia Airport (LGA)</li>
+                                <li>Newark Liberty International Airport (EWR)</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
             </section>
@@ -113,9 +126,15 @@ export default function Destination() {
                     </div>
 
                     <div className="projet-info">
-                        <p className="small-title"> Nature</p>
-                        <h4>Explore</h4>
-                        <a href="/Destination" className="projet-link">Exposition </a>
+                        <p className="small-title">Rome</p>
+                        <h6>De par son histoire très ancienne, Rome est une ville très riche en monuments et musées, et son centre est classé depuis 1980 au patrimoine mondial de l'humanité. C'est ainsi la deuxième ville la plus visitée au monde</h6>
+                        <p href="/Destination" className="projet-link">
+                            Les aéroports :
+                            <ul>
+                                <li >Rome-Fiumicino</li>
+                                <li> Rome-Ciampino</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
             </section>
