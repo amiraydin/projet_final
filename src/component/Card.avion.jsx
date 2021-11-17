@@ -51,8 +51,7 @@ export default function CardPlane(props) {
       <div className='container-card-avion'>
         <p>
 
-          All private aircraft offer their passenger the same comfort and service level on the ground – private terminals (FBO), VIP facilities, shortened or no security lines, private Immigration and Customs facilities and ability to drive up to the aircraft (at select airports). However, once you pass the private terminal doors and walkout to the jet awaiting you, no two aircraft types are the same.
-
+          Tous les avions privés offrent à leurs passagers le même confort et le même niveau de service au sol - terminaux privés (FBO), installations VIP, lignes de sécurité raccourcies ou inexistantes, installations d'immigration et de douane privées et possibilité de se rendre en voiture jusqu'à l'avion (dans certains aéroports). Cependant, une fois que vous avez franchi les portes du terminal privé et que vous vous dirigez vers le jet qui vous attend, aucun type d'avion n'est identique.
         </p>
 
 

@@ -86,7 +86,7 @@ export default function Search() {
                             {!retour &&
                                 <>
                                     <div>
-                                        <p className="p-search">Return :</p>
+                                        <p className="p-search">Retour :</p>
                                     </div>
                                     <div className="mb-3">
                                         <input type="date" onChange={(e) => setDateretour(e.target.value)} className="form-control" />
@@ -97,7 +97,7 @@ export default function Search() {
                                 </>
                             }
 
-                            <button type="submit" onClick={handleSubmit} className="btn">Submit</button>
+                            <button type="submit" onClick={handleSubmit} className="btn">Envoyez</button>
                         </form>
                     </div>
 
@@ -105,7 +105,7 @@ export default function Search() {
                         <h1 style={{ color: "white" }}>
                             {/* <strong></strong>  {' '} */}
                             <Typical loop={Infinity} wrapper="b" steps={[
-                                'PARIS', 1000, 'LONDON', 1000, 'NEW YORK', 1000, 'All around the world', 1000
+                                'PARIS', 1000, 'LONDON', 1000, 'NEW YORK', 1000, 'Partout dans le monde', 1000
                             ]} />
                         </h1>
                     </div>
