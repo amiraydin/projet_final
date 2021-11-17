@@ -49,7 +49,7 @@ export default function Footer() {
                                 <h3>Company Name</h3>
                                 <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
                             </div>
-                            <div><p class="copyright">Company Name © 2018</p></div>
+                            <div><p class="copyright">Company Name © 2021</p></div>
                         </div>
                     </div>
                 </footer>

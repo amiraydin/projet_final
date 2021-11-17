@@ -38,7 +38,7 @@ export default function Navbar() {
       href: "/Aproposdenous"
     },
     {
-      name: "Covid & Eco",
+      name: "Notre politique",
       color: "#295070",
       href: "/Covid"
     }

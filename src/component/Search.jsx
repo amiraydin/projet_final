@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import '../css/input.css'
 import image from '../video/hdtack.mp4'
 import Typical from 'react-typical'
+import Footer from './Footer'
 
 // import img from '../images/airplan.jpg'
 // import { Form, Button, Col, Row } from 'react-bootstrap';
@@ -112,6 +113,8 @@ export default function Search() {
 
                 </div>
             </div>
+
+            <Footer/>
         </>
     )
 }
