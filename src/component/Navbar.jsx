@@ -36,7 +36,13 @@ export default function Navbar() {
       name: "A propos de nous",
       color: "#295070",
       href: "/Aproposdenous"
-    }];
+    },
+    {
+      name: "Covid & Eco",
+      color: "#295070",
+      href: "/Covid"
+    }
+  ];
   /*-----Menu------*/
   const Menu = ({ items }) => {
     const $root = useRef();
