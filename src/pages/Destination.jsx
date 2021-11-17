@@ -83,13 +83,13 @@ export default function Destination() {
 
                     <div className="projet-info">
                         <p className="small-title">PARIS</p>
-                        <h6>Tour Eiffel, Cathédrale Notre-Dame, Centre Pompidou, Musée du Louvres, font de Paris une des villes les plus touristiques du monde avec près de 20 millions de visiteurs par an.</h6>
+                        <h6>Tour Eiffel, Cathédrale Notre-Dame, Centre Pompidou, Musée du Louvres, font de Paris une des villes les plus touristiques du monde chaque année.</h6>
                         <p href="/Destination" className="projet-link">Les aéroports :
                             <ul className="AKairports">
-                                <li>Roissy Charles-De-Gaulle (CDG)</li>
+                                <li>Roissy Charles-De-Gaulle </li>
                                 <li>Aéroport de Paris-Orly</li>
                                 <li>Aéroport de Paris-Le Bourget</li>
-                                <li>Aéroport de Paris-Beauvais Tillé (BVA)</li>
+
                             </ul> 
                             </p>
                     </div>
@@ -109,9 +109,9 @@ export default function Destination() {
                         <h6>C'est la capitale du style américain, là où se trouvent l'Empire State Building, Times Square, Central Park et la statue de liberté</h6>
                         <p href="/Destination" className="projet-link"> Les aéroports :
                             <ul className="AKairports">
-                                <li>JFK International Airport (JFK)</li>
-                                <li> LaGuardia Airport (LGA)</li>
-                                <li>Newark Liberty International Airport (EWR)</li>
+                                <li>JFK International Airport </li>
+                                <li> LaGuardia Airport </li>
+                                <li>Newark Liberty International Airport</li>
                             </ul>
                         </p>
                     </div>
@@ -127,7 +127,7 @@ export default function Destination() {
 
                     <div className="projet-info">
                         <p className="small-title">Rome</p>
-                        <h6>De par son histoire très ancienne, Rome est une ville très riche en monuments et musées, et son centre est classé depuis 1980 au patrimoine mondial de l'humanité. C'est ainsi la deuxième ville la plus visitée au monde</h6>
+                        <h6>De par son histoire très ancienne, Rome est une ville très riche en monuments et musées, et son centre est classé depuis 1980 au patrimoine mondial de l'humanité.</h6>
                         <p href="/Destination" className="projet-link">
                             Les aéroports :
                             <ul>
