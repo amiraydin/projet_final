@@ -91,18 +91,18 @@ export default function HomeMain() {
                 />
 
                 <div className="grey-container"></div>
-                <div className="text-descri">
-                    <h2> PARTOUT DANS LE MONDE</h2>
-                    <p> Luxury Plane propose des options d’affrètement de jet privé entre tous les aéroports mondiaux</p>
+                <div style={{ color: "white"}}  className="text-descri">
+                    <h2 style={{ color: "white"}}> PARTOUT DANS LE MONDE</h2>
+                    <p style={{ color: "white"}}> Luxury Plane propose des options d’affrètement de jet privé entre tous les aéroports mondiaux</p>
                     <br />
-                    <h2> SÛRETÉ ET SÉCURITÉ</h2>
-                    <p> Un engagement sans compromis pour la sécurité est ce qui distingue véritablement Luxury Plane. La sérénité de nos clients imprègne chaque décision au sein de notre organisation..</p>
+                    <h2 style={{ color: "white"}}> SÛRETÉ ET SÉCURITÉ</h2>
+                    <p style={{ color: "white"}}> Un engagement sans compromis pour la sécurité est ce qui distingue véritablement Luxury Plane. La sérénité de nos clients imprègne chaque décision au sein de notre organisation..</p>
                     <br />
-                    <h2>AVIONS MODERNES</h2>
-                    <p>Notre affrètement de jet privé est équipé pour satisfaire toutes vos demande – que vous ayez besoin d’une suite d’affaires entièrement équipée ou d’un lieu reposant loin de la maison.</p>
+                    <h2 style={{ color: "white"}}>AVIONS MODERNES</h2>
+                    <p style={{ color: "white"}}>Notre affrètement de jet privé est équipé pour satisfaire toutes vos demande – que vous ayez besoin d’une suite d’affaires entièrement équipée ou d’un lieu reposant loin de la maison.</p>
                     <br />
-                    <h2> RAPIDE ET ABORDABLE</h2>
-                    <p>Les prix de l’aviation privée dépendent d’un certain nombre de facteurs, notamment la disponibilité des avions et les frais d’atterrissage à l’aéroport. Vous seriez surpris d’apprendre qu’un vol privé pourrait vous coûter moins cher que prévu.</p>
+                    <h2 style={{ color: "white"}}> RAPIDE ET ABORDABLE</h2>
+                    <p style={{ color: "white"}}>Les prix de l’aviation privée dépendent d’un certain nombre de facteurs, notamment la disponibilité des avions et les frais d’atterrissage à l’aéroport. Vous seriez surpris d’apprendre qu’un vol privé pourrait vous coûter moins cher que prévu.</p>
 
                 </div>
             </div>
@@ -125,7 +125,7 @@ export default function HomeMain() {
             <div className="img-cont">
                 <div className="first-block">
                     <h3><strong>Securite</strong></h3>
-                    <p className="text-first" style={{ color: "black" }} >Tous les avions sont entretenus pour respecter et dépasser les normes de sécurité européennes fixées par l’Agence Européenne de la Sécurité Aérienne (EASA).</p>
+                    <p className="text-first" style={{ color: "white" }} >Tous les avions sont entretenus pour respecter et dépasser les normes de sécurité européennes fixées par l’Agence Européenne de la Sécurité Aérienne (EASA).</p>
                     <Link className="link" to="/Avions">
                         En savoir +
                     </Link>
@@ -136,7 +136,7 @@ export default function HomeMain() {
                     <img className="flight-one" src={flight} alt=" tof d'un avion" />
                     <div className="text-snd">
                         <h3><strong>Confort</strong></h3>
-                        <p style={{ position: "relative", top: "12rem", color: "black" }} className="text-second"> Voler devrait être un plaisir et nous rendrons votre expérience de vol aussi luxueuse et confortable que possibles</p>
+                        <p style={{ position: "relative", top: "12rem", color: "white" }} className="text-second"> Voler devrait être un plaisir et nous rendrons votre expérience de vol aussi luxueuse et confortable que possibles</p>
                         <Link className="link" to="/Avions">
                             En savoir +
                         </Link>

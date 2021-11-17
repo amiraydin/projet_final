@@ -1,6 +1,8 @@
 .covidimg{
-    width: 100%;
-    height: 70vh;
+    width: 95%;
+    height: 66vh;
+    border-radius: 100px;
+    margin-inline: 2rem;
 }
 
 .text-one{
@@ -18,8 +20,10 @@
 
 
 .ecoimg{
-        width: 100%;
-        height: 80vh;
+    width: 95%;
+    height: 66vh;
+    border-radius: 100px;
+    margin-inline: 2rem;
 }
 
 .text-eco{
