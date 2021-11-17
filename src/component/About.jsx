@@ -19,13 +19,15 @@ export default function About() {
     return (
         <div className="about-full-block">
 
-            <div className="about-section">
+            <div>
                 <img className="plane-about" src={plane_about} alt="" srcset="" />
+            </div>
+            <div className="about-section">
                 <h1>A propos de nous</h1>
                 <p className="team-title" >Notre équipe</p>
             </div>
-            
-            <div className="row">
+
+            <div className="row equip-sky">
                 <div className="column">
                     <div className="card">
                         <div className="container-about">
@@ -83,24 +85,24 @@ export default function About() {
 
             </div>
 
-<div className="block-airlines">
-    <img className="airlines" src={airline1} alt="" srcset="" />
-    <img className="airlines" src={airline2} alt="" srcset="" />
-    <img className="airlines" src={airline3} alt="" srcset="" />
-    <img className="airlines" src={airline4} alt="" srcset="" />
-    <img className="airlines" src={airline5} alt="" srcset="" />
-    <img className="airlines" src={airline6} alt="" srcset="" />
-    <img className="airlines" src={airline7} alt="" srcset="" />
-    <img className="airlines" src={airline8} alt="" srcset="" />
-    <img className="airlines" src={airline9} alt="" srcset="" />
-    <img className="airlines" src={airline10} alt="" srcset="" />
-    
-</div>
+            <div className="block-airlines">
+                <img className="airlines" src={airline1} alt="" srcset="" />
+                <img className="airlines" src={airline2} alt="" srcset="" />
+                <img className="airlines" src={airline3} alt="" srcset="" />
+                <img className="airlines" src={airline4} alt="" srcset="" />
+                <img className="airlines" src={airline5} alt="" srcset="" />
+                <img className="airlines" src={airline6} alt="" srcset="" />
+                <img className="airlines" src={airline7} alt="" srcset="" />
+                <img className="airlines" src={airline8} alt="" srcset="" />
+                <img className="airlines" src={airline9} alt="" srcset="" />
+                <img className="airlines" src={airline10} alt="" srcset="" />
+
+            </div>
 
 
-{/* footer */}
-            <Footer/>
+            {/* footer */}
+            <Footer />
         </div>
-        
+
     )
 }
