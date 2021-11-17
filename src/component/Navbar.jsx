@@ -9,7 +9,7 @@ export default function Navbar() {
 
   const items = [
     {
-      name: (<img src={logo} className="logo-imag" />),
+      name: (<img src={logo} className="logo-imag" alt="logo" />),
       color: "#295070",
       href: "/"
     },

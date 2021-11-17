@@ -22,7 +22,7 @@
   }
   
   .about-section {
-    padding: 50px;
+    padding: 40px;
     text-align: center;
     color: white;
     font-family: 'Work Sans', sans-serif;
@@ -71,6 +71,12 @@
   
 .last-block{
     margin-inline: 15%;
+}
+
+.equip-sky {
+  transform: translateX(42px);
+  margin-bottom: 20px;
+  
 }
 
 
