@@ -6,7 +6,9 @@ import Destination from "./pages/Destination";
 import Research from "./pages/Research";
 import Navbar from "./component/Navbar.jsx";
 import AboutUs from "./pages/AboutUs.jsx";
+import Covid from "./pages/Covid.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 
 export default function App() {
 
@@ -20,6 +22,7 @@ export default function App() {
           <Route path="/Destination" element={<Destination />} />
           <Route path="/Reserch" element={<Research />} />
           <Route path="/Aproposdenous" element={<AboutUs />} />
+          <Route path="/Covid" element={<Covid />} />
         </Routes>
       </BrowserRouter>
     </div>

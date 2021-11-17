@@ -1,0 +1,55 @@
+.covidimg{
+    width: 100%;
+    height: 70vh;
+}
+
+.text-one{
+    color: white;
+    margin: 6rem;
+}
+.text-one h1{
+    margin-top: 25px;
+    text-align: center;
+}
+.text-one p {
+    text-align: center;
+    padding: 3rem 4rem;
+}
+
+
+.ecoimg{
+        width: 100%;
+        height: 80vh;
+}
+
+.text-eco{
+    margin: 6rem;
+}
+
+.text-eco h1{
+    margin-top: 25px;
+    text-align: center;
+    color: white;
+}
+
+.text-eco p {
+    text-align: center;
+    padding: 2rem 4rem;
+    color: white;
+}
+
+.contact{
+    color: white;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+hr{
+    border: solid 2px rgb(250, 233, 0);
+    width: 50%;
+    margin-inline: 25%;
+}
+
+.contact-block {
+    margin: 3rem 4rem;
+}
