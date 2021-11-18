@@ -26,27 +26,39 @@ body {
     height: 100vh;
 }
 
+.container-detail-avion h1 {
+    width: 100%;
+    height: auto;
+    margin-left: 5rem;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
 .btn-return-aircrafts {
     position: absolute;
-    top: 30px;
-    right: 40px;
+    top: 4.5rem;
+    right: 5rem;
     border-radius: 5px;
     border-top-left-radius: 90%;
     border-bottom-left-radius: 40%;
     border: none;
-    background-color: transparent;
+    background-color: #295070;
     padding: 10px;
     font-weight: 700;
-    color: white;
+    color: rgb(255, 255, 255);
     z-index: 222;
     outline: none;
-    transform: scale(0.9);
+    transform: scale(0.7);
+    border: 2px solid rgba(255, 255, 255, 0.51);
+    box-shadow: inset .5px .5px 3px 1px #000000a8, -.5px -.5px 3px 1px #000000ad;
+    transition: 0.8 ease-in-out;
 }
 
 .btn-return-aircrafts:hover {
-    /* background-color: rgb(98, 166, 255); */
-    background-color: rgba(255, 217, 0, 0.487);
-    color: white;
+    background-color: rgb(59, 119, 193);
+    transform: scale(0.68);
+    color: rgb(255, 255, 255);
 }
 
 .header-avion-detail {
@@ -62,18 +74,27 @@ body {
 .line-separation-blocks-1 {
     width: 100%;
     height: 5px;
-    background: linear-gradient(45deg, rgb(28, 28, 28), rgb(223, 190, 1));
+    border: 1px solid rgba(0, 0, 0, 0.183);
+
+    background: linear-gradient(45deg, rgb(28, 28, 28), rgb(223, 190, 1), rgb(28, 28, 28));
 }
+
 .line-separation-blocks-2 {
+    position: absolute;
+    top: 0;
     width: 100%;
     height: 5px;
-    background: linear-gradient(45deg, rgb(223, 190, 1), rgb(28, 28, 28));
+    border: 1px solid rgba(0, 0, 0, 0.183);
+    background: linear-gradient(45deg, rgb(28, 28, 28), rgb(223, 190, 1), rgb(28, 28, 28));
 }
+
 .line-separation-blocks-3 {
     width: 100%;
     height: 5px;
-    background: linear-gradient(45deg, rgb(28, 28, 28), rgb(223, 190, 1),rgb(28, 28, 28) );
+    border: 1px solid rgba(0, 0, 0, 0.183);
+    background: linear-gradient(45deg, rgb(28, 28, 28), rgb(223, 190, 1), rgb(28, 28, 28));
 }
+
 .description-specification {
     position: relative;
     display: grid;
@@ -87,6 +108,10 @@ body {
     font-size: 1.2rem;
     color: #f1f1f1;
     background: linear-gradient(45deg, black, rgb(98, 166, 255));
+}
+
+.cabin-section {
+    position: relative;
 }
 
 .title-lines {
@@ -111,9 +136,11 @@ body {
         transform: translateX(-220px) translateY(-100px);
         opacity: 0;
     }
+
     50% {
         opacity: 0.5;
     }
+
     100% {
         width: 100%;
         opacity: 1;
@@ -143,6 +170,7 @@ body {
 }
 
 .aircraft-specification {
+    position: relative;
     margin-top: 18%;
     margin-left: auto;
     margin-right: auto;
@@ -156,8 +184,9 @@ body {
     position: relative;
     font-weight: bold;
 }
+
 .list-detail-li span {
-    display: block;   
+    display: block;
     margin-left: 10px;
     font-weight: normal;
 }
@@ -168,8 +197,8 @@ body {
     overflow: hidden;
 }
 
-@media  (max-width: 600px) {
- 
+@media (max-width: 600px) {
+
     .description-specification {
         display: flex;
         flex-direction: column;
@@ -177,15 +206,17 @@ body {
         justify-content: center;
         padding: 15px;
     }
+
     .aircraft-info {
         padding-right: 20px;
     }
 
-    .aircraft-specification {        
-        width: 100%;  
+    .aircraft-specification {
+        width: 100%;
         margin: 0;
-    
+
     }
+
     .list-detail-ul {
         padding: 0;
         width: 100%;
