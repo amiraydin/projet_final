@@ -29,7 +29,7 @@ export default function Navbar() {
     {
       name: "Réservez votre vol",
       color: "#295070",
-      href: "/Reserch"
+      href: "/Research"
     },
 
     {
@@ -38,7 +38,7 @@ export default function Navbar() {
       href: "/Aproposdenous"
     },
     {
-      name: "Covid & Eco",
+      name: "Notre politique",
       color: "#295070",
       href: "/Covid"
     }

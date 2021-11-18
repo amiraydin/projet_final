@@ -83,15 +83,14 @@ export default function Destination() {
 
                     <div className="projet-info">
                         <p className="small-title">PARIS</p>
-                        <h6>Tour Eiffel, Cathédrale Notre-Dame, Centre Pompidou, Musée du Louvres, font de Paris une des villes les plus touristiques du monde chaque année.</h6>
+                        <h6 className="AKairports">Tour Eiffel, Cathédrale Notre-Dame, Centre Pompidou, Musée du Louvres, Paris est une des villes les plus touristiques du monde avec près de 20 millions de visiteurs par an.</h6>
                         <p href="/Destination" className="projet-link">Les aéroports :
                             <ul className="AKairports">
                                 <li>Roissy Charles-De-Gaulle </li>
                                 <li>Aéroport de Paris-Orly</li>
                                 <li>Aéroport de Paris-Le Bourget</li>
-
-                            </ul> 
-                            </p>
+                            </ul>
+                        </p>
                     </div>
                 </div>
             </section>
@@ -106,7 +105,7 @@ export default function Destination() {
 
                     <div className="projet-info">
                         <p className="small-title"> New-York</p>
-                        <h6>C'est la capitale du style américain, là où se trouvent l'Empire State Building, Times Square, Central Park et la statue de liberté</h6>
+                        <h6 className="AKairports">C'est la capitale du style américain, là où se trouvent l'Empire State Building, Times Square, Central Park et la statue de liberté</h6>
                         <p href="/Destination" className="projet-link"> Les aéroports :
                             <ul className="AKairports">
                                 <li>JFK International Airport </li>
@@ -127,10 +126,10 @@ export default function Destination() {
 
                     <div className="projet-info">
                         <p className="small-title">Rome</p>
-                        <h6>De par son histoire très ancienne, Rome est une ville très riche en monuments et musées, et son centre est classé depuis 1980 au patrimoine mondial de l'humanité.</h6>
+                        <h6 className="AKairports">De par son histoire très ancienne, Rome est une ville très riche en monuments et musées, et son centre est classé depuis 1980 au patrimoine mondial de l'humanité. C'est ainsi la deuxième ville la plus visitée au monde</h6>
                         <p href="/Destination" className="projet-link">
                             Les aéroports :
-                            <ul>
+                            <ul className="AKairports">
                                 <li >Rome-Fiumicino</li>
                                 <li> Rome-Ciampino</li>
                             </ul>

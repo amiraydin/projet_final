@@ -9,10 +9,16 @@ body {
   background-color:#04163B;
 }
 
+.line-separation-blocks-search {
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(45deg, rgb(28, 28, 28), rgba(1, 153, 223, 0.849),rgb(28, 28, 28) );
+}
+
 .vid {
   position: fixed;
   top: 55%;
-  left: 40%;
+  left: 50%;
   width: 100vw;
   height: 100vh;
   width: auto;
@@ -105,3 +111,11 @@ input::-webkit-inner-spin-button {
 /* @media screen() {
   
 } */
+#searchResultsFrom {
+  color: white;
+  cursor: pointer;
+}
+#searchResultsTo {
+  color: white;
+  cursor: pointer;
+}

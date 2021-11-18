@@ -49,7 +49,7 @@ export default function Footer() {
                                 <h3>SKYJET</h3>
                                 <p>Praesent sed lobortis mi</p>
                             </div>
-                            <div><p class="copyright">SKYJET © 2022 </p></div>
+                            <div><p class="copyright">Company Name © 2021</p></div>
                         </div>
                     </div>
                 </footer>
