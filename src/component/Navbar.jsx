@@ -34,7 +34,7 @@ export default function Navbar() {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/Reserch">
+              <Link className="nav-link" to="/Research">
                 Réserver un vol
               </Link>
             </li>

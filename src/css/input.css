@@ -12,7 +12,7 @@ body {
 .vid {
   position: fixed;
   top: 55%;
-  left: 40%;
+  left: 50%;
   width: 100vw;
   height: 100vh;
   width: auto;
@@ -102,3 +102,11 @@ input::-webkit-inner-spin-button {
 /* @media screen() {
   
 } */
+#searchResultsFrom {
+  color: white;
+  cursor: pointer;
+}
+#searchResultsTo {
+  color: white;
+  cursor: pointer;
+}

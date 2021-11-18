@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import data from '../dataJson/AircraftData'
 import Typical from 'react-typical'
 import '../css/detail.avion.css'
@@ -12,6 +12,10 @@ const DataJets = (props) => {
     console.log('data :>> ', data);
     console.log('category :>> ', category);
     console.log('chosenCategory :>> ', chosenCategory);
+
+    useEffect(()=>{
+        window.scroll(0,0)
+    },[])
 
 
 
@@ -31,11 +35,11 @@ const DataJets = (props) => {
 
             {chosenCategory &&
                 <>
-                    <div className="header-avion-detail">
-                        <img className="img-header" src={chosenCategory.images.exterior} alt={chosenCategory.title} />
+                    <div  className="header-avion-detail">
+                        <img className="img-header"  src={chosenCategory.images.exterior} alt={chosenCategory.title} />
                     </div>
                     <div className="line-separation-blocks-1"></div>
-                    <section className="description-specification">
+                    <section className="description-specification" >
                         <div className="aircraft-info">
                             <div className="title-lines">
                                 <h2>{chosenCategory.title}</h2>
@@ -65,9 +69,9 @@ const DataJets = (props) => {
                             </ul>
                         </div>
                     </section>
-                    <div className="line-separation-blocks-2"></div>
 
-                    <section >
+                    <section className="cabin-section">
+                    <div className="line-separation-blocks-2"></div>
                         <img className="img-cabin" src={chosenCategory.images.cabin} alt={chosenCategory.title} />
                     </section>
                     <div className="line-separation-blocks-3"></div>

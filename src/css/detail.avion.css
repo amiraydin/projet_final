@@ -34,7 +34,7 @@ body {
     border-top-left-radius: 90%;
     border-bottom-left-radius: 40%;
     border: none;
-    background-color: transparent;
+    background-color: rgba(255, 217, 0, 0.487);
     padding: 10px;
     font-weight: 700;
     color: white;
@@ -46,7 +46,7 @@ body {
 .btn-return-aircrafts:hover {
     /* background-color: rgb(98, 166, 255); */
     background-color: rgba(255, 217, 0, 0.487);
-    color: white;
+    color: black;
 }
 
 .header-avion-detail {
@@ -65,6 +65,8 @@ body {
     background: linear-gradient(45deg, rgb(28, 28, 28), rgb(223, 190, 1));
 }
 .line-separation-blocks-2 {
+    position: absolute;
+    top: 0;
     width: 100%;
     height: 5px;
     background: linear-gradient(45deg, rgb(223, 190, 1), rgb(28, 28, 28));
@@ -87,6 +89,10 @@ body {
     font-size: 1.2rem;
     color: #f1f1f1;
     background: linear-gradient(45deg, black, rgb(98, 166, 255));
+}
+
+.cabin-section {
+    position: relative;
 }
 
 .title-lines {
@@ -143,6 +149,7 @@ body {
 }
 
 .aircraft-specification {
+    position: relative;
     margin-top: 18%;
     margin-left: auto;
     margin-right: auto;

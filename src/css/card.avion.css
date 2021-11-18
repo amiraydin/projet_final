@@ -31,7 +31,7 @@ body {
     background-image: url('../images/learjet-1636124443335-5209.jpg');
     background-size: cover;
     background-position: center;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
 
 }
 
@@ -39,7 +39,7 @@ body {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding-top: 100px;   
+    padding: 100px 0 200px;   
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -145,6 +145,8 @@ body {
 }
 
 .line-separation-blocks-2 {
+    position: absolute;
+    bottom: 0;
     width: 100%;
     height: 5px;
     background: linear-gradient(45deg, rgb(28, 28, 28), rgb(223, 190, 1));

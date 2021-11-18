@@ -18,7 +18,7 @@ export default function App() {
           <Route exact path="/" element={<Home />} />
           <Route path="/Avions" element={<Avions />} />
           <Route path="/Destination" element={<Destination />} />
-          <Route path="/Reserch" element={<Research />} />
+          <Route path="/Research" element={<Research />} />
           <Route path="/Aproposdenous" element={<AboutUs />} />
         </Routes>
       </BrowserRouter>
