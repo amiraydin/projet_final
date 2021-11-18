@@ -31,7 +31,9 @@ body {
 
 form {
   top: -20px;
+  left: 4rem;
   position: relative;
+  margin-left: 10rem;
   background: rgba(255,255,255,0.3);
   height: auto;
   border-radius: 20px;
