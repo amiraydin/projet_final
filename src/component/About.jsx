@@ -21,8 +21,10 @@ export default function About() {
 
             <div>
                 <img className="plane-about" src={plane_about} alt="" srcset="" />
-                <h1>À propos de nous</h1>
-                <p className="team-title" >Notre équipe</p>
+                <div className="about-title-main">
+                    <h1>À propos de nous</h1>
+                    <p className="team-title" >Notre équipe</p>
+                </div>
             </div>
 
             <div className="row equip-sky">

@@ -55,7 +55,7 @@ body {
 
 .img-header {
     width: 100vw;
-    height: auto;
+    height: 40rem;
     overflow: hidden;
 }
 
@@ -164,7 +164,7 @@ body {
 
 .img-cabin {
     width: 100vw;
-    height: auto;
+    height: 39rem;
     overflow: hidden;
 }
 

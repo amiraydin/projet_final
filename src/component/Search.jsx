@@ -114,6 +114,7 @@ export default function Search() {
                 </div>
             </div>
 
+            <div className="line-separation-blocks-search"></div>
             <Footer/>
         </>
     )
