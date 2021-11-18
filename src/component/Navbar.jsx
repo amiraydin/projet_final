@@ -29,7 +29,7 @@ export default function Navbar() {
     {
       name: "Réservez votre vol",
       color: "#295070",
-      href: "/Reserch"
+      href: "/Research"
     },
 
     {

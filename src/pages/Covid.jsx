@@ -35,7 +35,8 @@ export default function Covid() {
 
                     Pour plus d'informations, vous pouvez obtenir des mises à jour de l'Organisation mondiale de la santé ( OMS ), qui publie des nouvelles sur une page spécifique pour informer et conseiller sur l'évolution du coronavirus (COVID-19).</p>
             </section>
-
+            <hr />
+F
 
             <section className="eco-two">
                 <img className="ecoimg" src={eco} alt="" />
@@ -47,23 +48,42 @@ export default function Covid() {
                 </section>
             </section>
             <hr />
+
             <section className="contact">
                 <div className="contact-block">
-                    <h1 style={{ marginBottom: "30px" }}  > Questions</h1>
+                    <h1 style={{ marginBottom: "30px" , fontWeight: "bold" }}  > Questions</h1>
                     <p> Un vol au plus près de vos besoins au meilleur tarif</p>
                     <p> Une optimisation maximale de votre temps de vol</p>
                     <p> Un interlocuteur disponible 24/24H 7/7J</p >
                     <p> Un représentant au départ du vol</p >
                     <p>Une discrétion garantie</p >
                     <p> Vous avez une question:</p >
+                    <p>Appelez - nous au + 33(0)1 83 62 66 47</p>
                 </div>
-                <p>Appelez - nous au + 33(0)1 83 62 66 47</p>
+           
+
+            <div className="nous-contacter">
+            <h1 style={{ marginBottom: "30px" , fontWeight: "bold" }}  > Nous Contacter</h1>
+
+                <div className="form-floating mb-3">
+                    <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
+                    <label for="floatingInput">Votre Email</label>
+                </div>
+                <div className="form-floating">
+                    <input type="text" className="form-control" id="floatingPassword" placeholder="Prenom" />
+                    <label for="floatingPassword">Prénom</label>
+                </div>
+
+                <div className="form-floating">
+                    <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style={{height:"90px"}} ></textarea>
+                    <label for="floatingTextarea2">Commentaires</label>
+                </div>
+            </div>
             </section >
 
-
-
-
+            {/* footer */}
             <div>
+            <div className="line-separation-blocks"></div>
                 <Footer />
             </div>
         </div >

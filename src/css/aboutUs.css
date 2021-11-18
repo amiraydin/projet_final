@@ -30,7 +30,7 @@
 
   .plane-about{
     width: 100%;
-    height: 50%;
+    height: 44rem;
   }
   
 .equip-sky {
@@ -51,6 +51,12 @@
   .title {
     color: rgb(77, 72, 72);
   }
+
+
+.about-title-main{
+  text-align: center;
+  padding: 2rem 3rem;
+}
 
   .team-title{
     font-size: 2rem;
