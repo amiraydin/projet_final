@@ -4,6 +4,7 @@ import '../css/input.css'
 import image from '../video/hdtack.mp4'
 import Typical from 'react-typical'
 import Footer from './Footer'
+// import Modal from './modal'
 
 // import img from '../images/airplan.jpg'
 // import { Form, Button, Col, Row } from 'react-bootstrap';
@@ -38,6 +39,7 @@ export default function Search() {
 
     return (
         <>
+            {/* <Modal /> */}
             <video className="vid" loop muted autoPlay>
                 <source src={image} />
             </video>
@@ -114,7 +116,7 @@ export default function Search() {
                 </div>
             </div>
 
-            <Footer/>
+            <Footer />
         </>
     )
 }
