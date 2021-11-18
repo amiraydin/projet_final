@@ -153,7 +153,7 @@ export default function Search() {
                 <div className="col-12 pb-5 mb-5 ">
 
 
-                    <form className="container mb-5  col-4 m-3  rounded-5 mt-5 p-4 pt-5" >
+                    <form className="container mb-5 ms-5 col-4 m-3  rounded-5 mt-5 p-4 pt-5" >
                         <div>
                             <div className="form-check">
                                 <input
@@ -164,6 +164,7 @@ export default function Search() {
                                 <label htmlFor="check1">
                                     <p>SIMPLE GO</p>
                                 </label>
+                                
                             </div>
                         </div>
                         <div>
