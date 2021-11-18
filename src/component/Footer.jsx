@@ -6,7 +6,7 @@ import logo from '../images/logo1.png'
 export default function Footer() {
     return (
         <div>
-            <div class="footer-dark">
+            <div class="footer-dark text-center">
                 <footer>
                     <div class="container">
                         <img src={logo} className="logo" alt="" srcset="" />
@@ -19,13 +19,13 @@ export default function Footer() {
                                         Avions
                                     </Link></li>
                                     <li><Link to="/Destination">
-                                        Destination
+                                        Destinations
                                     </Link></li>
                                     <li><Link to="/Reserch">
-                                        Réserver un vol
+                                        Réservez votre vol
                                     </Link></li>
                                     <li> <Link to="/Aproposdenous">
-                                        A propos de nous
+                                        À propos de nous
                                     </Link></li>
 
 
@@ -38,18 +38,18 @@ export default function Footer() {
                                         Avions
                                     </Link></li>
                                     <li><Link className="#" to="/Destination">
-                                        Destination
+                                        Destinations
                                     </Link></li>
                                     <li><Link className="#" to="/Reserch">
-                                        Réserver un vol
+                                        Réservez votre vol
                                     </Link></li>
                                 </ul>
                             </div>
                             <div class="col-md-6 item text">
-                                <h3>Company Name</h3>
-                                <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                                <h3>SKYJET</h3>
+                                <p>Praesent sed lobortis mi</p>
                             </div>
-                            <div><p class="copyright">Company Name © 2018</p></div>
+                            <div><p class="copyright">Company Name © 2021</p></div>
                         </div>
                     </div>
                 </footer>

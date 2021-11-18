@@ -4,15 +4,18 @@ import '../css/input.css'
 import image from '../video/hdtack.mp4'
 import Typical from 'react-typical'
 import RecapVol from './RecapVol'
+import Footer from './Footer'
 
 // import img from '../images/airplan.jpg'
 // import { Form, Button, Col, Row } from 'react-bootstrap';
 
 export default function Search() {
+    const [nom, setNom] = useState("")
+    const [prenom, setPrenom] = useState("")
     const [simpleGo, setSimpleGo] = useState("")
     const [goAndReturn, setGoAndReturn] = useState("")
-    const [from, setFrom] = useState("")    
-    const [to, setTo] = useState("")    
+    const [from, setFrom] = useState("")
+    const [to, setTo] = useState("")
     const [passengers, setpassengers] = useState("")
     const [date, setDate] = useState("")
     const [time, setTime] = useState("")
@@ -20,7 +23,7 @@ export default function Search() {
     const [dateretour, setDateretour] = useState("")
     const [timeretour, setTimeretour] = useState("")
     const [booked, setBooked] = useState(false)
-    
+
 
     useEffect(() => {
 
@@ -38,7 +41,7 @@ export default function Search() {
         // is booked ?
         console.log('is booked :>> ', booked);
 
-    }, [from, to, date, time, passengers, dateretour, timeretour,booked])
+    }, [from, to, date, time, passengers, dateretour, timeretour, booked])
 
 
     const handleDepartureFrom = (e) => {
@@ -68,7 +71,7 @@ export default function Search() {
                         searchResultsFrom.innerHTML = '<p> Sorry Nothing Found </p>';
                         return
                     }
-                    
+
                     payload.forEach((item, index) => {
                         if (index > 0) searchResultsFrom.innerHTML += '<hr>';
                         searchResultsFrom.innerHTML += `<p>${item.name}</p>`
@@ -277,29 +280,29 @@ export default function Search() {
                     <div className="position-absolute top-50 start-50 text-center d-flex flex-row-reverse" >
                         <h1 style={{ color: "white" }}>
                             <Typical loop={Infinity} wrapper="b" steps={[
-                                'PARIS', 1000, 'LONDON', 1000, 'NEW YORK', 1000, 'All around the world', 1000
+                                'PARIS', 1000, 'LONDON', 1000, 'NEW YORK', 1000, 'Partout dans le monde', 1000
                             ]} />
                         </h1>
                     </div>
                 </div>
                 :
-                               
-                    <RecapVol
-                        from={from}
-                        to={to}
-                        departurDate={date}
-                        departurTime={time}
-                        passengers={passengers}
-                        returnDate={dateretour}
-                        returnTime={timeretour}
-                        setBooked={setBooked}
-                    />
 
-               
+                <RecapVol
+                    from={from}
+                    to={to}
+                    departurDate={date}
+                    departurTime={time}
+                    passengers={passengers}
+                    returnDate={dateretour}
+                    returnTime={timeretour}
+                    setBooked={setBooked}
+                />
+
+
 
             }
 
-
+            <Footer />
 
 
         </>
