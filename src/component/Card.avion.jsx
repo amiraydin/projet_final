@@ -159,7 +159,7 @@ export default function CardPlane(props) {
           </div>
           <button onClick={() => categories('heavyJet')}>show</button>
         </div>
-        <div className="line-separation-blocks-2"></div>
+        <div className="line-separation-blocks-2-avion"></div>
       </div>
       <Footer />
 

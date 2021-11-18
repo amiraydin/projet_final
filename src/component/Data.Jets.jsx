@@ -26,7 +26,7 @@ const DataJets = (props) => {
         <div className='container-detail-avion'>
 
 
-            <h1 style={{ position: "absolute", top: "20%", left: "5%", color: "white", zIndex: "222", width: "auto" }}>
+            <h1 style={{ position: "absolute", top: "5rem", left: "5%", color: "white", zIndex: "222", width: "auto" }}>
                 <Typical loop={1} wrapper='b' steps={[
                     'Model', 1000, chosenCategory.title, 1000
                 ]} />
