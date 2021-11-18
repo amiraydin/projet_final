@@ -1,4 +1,8 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Fredoka+One&family=Poppins:wght@300&family=Saira&display=swap');
+/* font-family: 'Bungee Hairline', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Saira', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
 
 body{
@@ -67,31 +71,35 @@ body{
 .btn-booking {
   align-items: center;
   appearance: none;
-  background-color: rgb(231 231 231);
-  border-radius: 24px;
+  background-color: #295070;
+  border-radius: 7px;
   border-style: none;
-  box-shadow: rgb(25, 0, 255) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-shadow: rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
   box-sizing: border-box;
-  color: #000000;
+  border: 1px solid white;
+  color: white;
   cursor: pointer;
   display: inline-flex;
   fill: currentcolor;
-  font-family: "Google Sans",Roboto,Arial,sans-serif;
-  font-size: 14px;
+  font-family: 'Saira', sans-serif;
+  font-size: 2rem;
   font-weight: 500;
+  width: 350px;
   height: 48pbx;
   justify-content: center;
   letter-spacing: .25px;
-  line-height: normal;
-  max-width: 100%;
   overflow: visible;
-  padding: 25px;
-  margin-left: 45%;
+  padding: 12px 24px;
+  margin-left: 38%;
+  text-shadow: -2px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+
+
 }
 
 .btn-booking:hover {
-  background: #F6F9FE;
-  color: #174ea6;
+  background: #1a496d;
+  color: white;
+  
 }
 
 

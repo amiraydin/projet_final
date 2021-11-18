@@ -6,7 +6,7 @@ import { Power3, gsap, TimelineLite } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import imag1 from '../images/destination/ArcParis.jpg';
 import imag2 from '../images/destination/NewYorkk.jpg';
-import imag3 from '../images/destination/rome.jpg';
+import imag3 from '../images/destination/rome.webp';
 // import { CSSRulePlugin } from "gsap/CSSRulePlugin";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -82,7 +82,7 @@ export default function Destination() {
                     </div>
 
                     <div className="projet-info">
-                        <p className="small-title">PARIS</p>
+                        <p className="small-title"><strong>PARIS</strong></p>
                         <h6 className="AKairports">Tour Eiffel, Cathédrale Notre-Dame, Centre Pompidou, Musée du Louvres, Paris est une des villes les plus touristiques du monde avec près de 20 millions de visiteurs par an.</h6>
                         <p href="/Destination" className="projet-link">Les aéroports :
                             <ul className="AKairports">
@@ -104,7 +104,7 @@ export default function Destination() {
                     </div>
 
                     <div className="projet-info">
-                        <p className="small-title"> New-York</p>
+                        <p className="small-title"><strong>NEW-YORK</strong> </p>
                         <h6 className="AKairports">C'est la capitale du style américain, là où se trouvent l'Empire State Building, Times Square, Central Park et la statue de liberté</h6>
                         <p href="/Destination" className="projet-link"> Les aéroports :
                             <ul className="AKairports">
@@ -125,7 +125,7 @@ export default function Destination() {
                     </div>
 
                     <div className="projet-info">
-                        <p className="small-title">Rome</p>
+                        <p className="small-title"><strong>ROME</strong></p>
                         <h6 className="AKairports">De par son histoire très ancienne, Rome est une ville très riche en monuments et musées, et son centre est classé depuis 1980 au patrimoine mondial de l'humanité. C'est ainsi la deuxième ville la plus visitée au monde</h6>
                         <p href="/Destination" className="projet-link">
                             Les aéroports :

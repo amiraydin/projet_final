@@ -46,6 +46,7 @@ export default function Search() {
 
 
     const handleDepartureFrom = (e) => {
+        setFrom(e.target.value)
         const searchResultsFrom = document.getElementById('searchResultsFrom');
         let match = e.target.value.match(/^[a-zA-Z]*/);
         let match2 = e.target.value.match(/\s*/);
@@ -72,7 +73,6 @@ export default function Search() {
                         searchResultsFrom.innerHTML = '<p> Sorry Nothing Found </p>';
                         return
                     }
-
                     payload.forEach((item, index) => {
                         if (index > 0) searchResultsFrom.innerHTML += '<hr>';
                         searchResultsFrom.innerHTML += `<p>${item.name}</p>`
@@ -82,12 +82,13 @@ export default function Search() {
                 .catch(error => console.error(error));
             return;
         }
-        searchResultsFrom.innerHTML = '';
+        // searchResultsFrom.innerHTML = '';
 
     };
 
 
     const handleDepartureTo = (e) => {
+        setTo(e.target.value)
         const searchResultsTo = document.getElementById('searchResultsTo');
         let match = e.target.value.match(/^[a-zA-Z]*/);
         let match2 = e.target.value.match(/\s*/);
@@ -158,27 +159,28 @@ export default function Search() {
                     <form className="container mb-5 ms-5 col-4 m-3  rounded-5 mt-5 p-4 pt-5" >
                         <div>
                             <div className="form-check">
-                                <input
+                                <label htmlFor="check1">
+                                <input                                    
                                     onChange={(e) => setSimpleGo(e.target.value)} className="form-check-input"
                                     value="ALLER SIMPLE"
                                     type="checkbox"
                                     id="check1" />
-                                <label htmlFor="check1">
-                                    <p>SIMPLE GO</p>
+                                    <p className='aller-retour'>aller simple</p>
                                 </label>
 
                             </div>
                         </div>
                         <div>
                             <div className="form-check">
-                                <input
+                                <label htmlFor="check2">
+                                <input                                   
                                     type="checkbox"
                                     onChange={(e) => setGoAndReturn(e.target.value)} className="form-check-input"
                                     value="ALLER RETOUR"
                                     id="check2"
-                                    onClick={() => Affiche()} />
-                                <label htmlFor="check2">
-                                    <p>GO-RETURN</p>
+                                    onClick={() => Affiche()}
+                                />
+                                    <p className='aller-retour'>aller retour</p>
                                 </label>
                             </div>
                         </div>
@@ -190,7 +192,7 @@ export default function Search() {
                             <input
                                 type="text"
                                 onChange={(e) => handleDepartureFrom(e)} className="form-control"
-                                placeholder="From ..."
+                                placeholder="Départ ..."
                                 value={from} />
                             <i class="fas fa-plane-departure"></i>
                         </div>
@@ -208,7 +210,7 @@ export default function Search() {
                             <input
                                 type="text"
                                 onChange={(e) => handleDepartureTo(e)} className="form-control"
-                                placeholder="To..."
+                                placeholder="Arrivée..."
                                 value={to}
                             />
                             <i className="fas fa-plane-arrival"></i>
@@ -225,6 +227,7 @@ export default function Search() {
                         {/* input date de départ */}
                         <div className="mb-3">
                             <input
+                                id="selectDate"
                                 type="date"
                                 onChange={(e) => {
                                     setDate(e.target.value)
@@ -245,9 +248,31 @@ export default function Search() {
                         <div className="mb-3 passenger">
                             <input
                                 type="number"
+                                list="quantities"
                                 onChange={(e) => setpassengers(e.target.value)} className="form-control"
-                                placeholder="passengers"
-                                min="1" max="10" />
+                                placeholder="passagers"
+                            />
+                            <datalist id="quantities">
+                                <option value="19">19</option>
+                                <option value="18">18</option>
+                                <option value="17">17</option>
+                                <option value="16">16</option>
+                                <option value="15">15</option>
+                                <option value="14">14</option>
+                                <option value="13">13</option>
+                                <option value="12">12</option>
+                                <option value="11">11</option>
+                                <option value="10">10</option>
+                                <option value="9">9</option>
+                                <option value="8">8</option>
+                                <option value="7">7</option>
+                                <option value="6">6</option>
+                                <option value="5">5</option>
+                                <option value="4">4</option>
+                                <option value="3">3</option>
+                                <option value="2">2</option>
+                                <option value="1">1</option>
+                            </datalist>
                             <i className="fa fa-user fa-lg"></i>
                         </div>
 
@@ -275,7 +300,7 @@ export default function Search() {
                             type="submit"
                             onClick={handleSubmit}
                             className="btn">
-                            Submit
+                            Rechercher
                         </button>
                     </form>
 

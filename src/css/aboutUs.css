@@ -50,6 +50,12 @@
   
   .title {
     color: rgb(77, 72, 72);
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .our-names {
+    color: black;
+    font-size: 1.2rem;
   }
 
 
