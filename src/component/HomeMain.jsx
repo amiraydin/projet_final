@@ -124,7 +124,7 @@ export default function HomeMain() {
 
             <div className="img-cont">
                 <div className="first-block">
-                    <h3><strong>Securite</strong></h3>
+                    <h3><strong>Sécurite</strong></h3>
                     <p className="text-first" style={{ color: "white" }} >Tous les avions sont entretenus pour respecter et dépasser les normes de sécurité européennes fixées par l’Agence Européenne de la Sécurité Aérienne (EASA).</p>
                     <Link style={{ position: "relative", top: "1rem" }} className="link" to="/Avions">
                         En savoir +

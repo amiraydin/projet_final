@@ -32,8 +32,8 @@ export default function About() {
                     <div className="card">
                         <div className="container-about">
                             <h2>Theesan</h2>
-                            <p className="title">CEO & Founder</p>
-                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                            <p className="title">Founder & Développeur Fullstack</p>
+                            <p className="our-names">Theesan Jeyasegar</p>
                             <p><button className="button">Contact</button></p>
                         </div>
                     </div>
@@ -42,8 +42,8 @@ export default function About() {
                     <div className="card">
                         <div className="container-about">
                             <h2>Sofiane</h2>
-                            <p className="title">Chef de projet CTO</p>
-                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                            <p className="title">Développeur Fullstack</p>
+                            <p className="our-names">Sofiane Sghiouar</p>
                             <p><button className="button">Contact</button></p>
                         </div>
                     </div>
@@ -52,8 +52,8 @@ export default function About() {
                     <div className="card">
                         <div className="container-about">
                             <h2>Amir</h2>
-                            <p className="title">Lead Développeur Fullstack</p>
-                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                            <p className="title">Développeur Fullstack</p>
+                            <p className="our-names">Amir Ahmadi</p>
                             <p><button className="button">Contact</button></p>
                         </div>
                     </div>
@@ -66,7 +66,7 @@ export default function About() {
                             <div className="container-about">
                                 <h2>Amir</h2>
                                 <p className="title">Développeur Front-end</p>
-                                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                <p className="our-names">Ishran Mohammad</p>
                                 <p><button className="button">Contact</button></p>
                             </div>
                         </div>
@@ -76,7 +76,7 @@ export default function About() {
                             <div className="container-about">
                                 <h2>Ishran</h2>
                                 <p className="title">Développeur Front-end </p>
-                                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                <p className="our-names">Amir Kharmaz</p>
                                 <p><button className="button">Contact</button></p>
                             </div>
                         </div>

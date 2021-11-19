@@ -51,6 +51,15 @@ form {
   font-weight: 500;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
+.form-check {
+  margin-right: 80%;
+}
+.form-check label{
+  width: 120px;
+}
+.aller-retour{
+  text-transform:capitalize;
+}
 
 .form-control::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -108,6 +117,13 @@ input::-webkit-inner-spin-button {
   top: 16px;
   color: #04163B;
 }
+#quantities {
+  position: absolute;
+  top: 5px;
+  right: 35px;
+  background-color: #9E9E9F ;
+  outline: none;
+}
 /* input[type="text"], [type="time"], [type="date"], [type="checkbox"], [type="submit"], [type="number"] */
 
 /* @media screen() {
@@ -121,3 +137,12 @@ input::-webkit-inner-spin-button {
   color: white;
   cursor: pointer;
 }
+
+/* .input-aller-retour {
+  position: relative;
+}
+.aller-retour {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
