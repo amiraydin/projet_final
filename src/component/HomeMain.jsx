@@ -106,7 +106,7 @@ export default function HomeMain() {
 
                 </div>
             </div>
-            <Link className="nav-link" to="/Reserch">
+            <Link className="nav-link" to="/Research">
                 <button className="btn-booking">Réservez votre vol</button>
             </Link>
 
